@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="Justchenhao&#39;s Blog">
 <meta property="og:description" content="本文章记录本人利用hexo搭建博客并发布到github的全过程。 配置流程：1安装Node.js，命令行中输入 node -v，查看是否正确安装； 2安装Hexo：命令行输入： 1npm install -g hexo-cli  3初始化blog安装完成后，在blog文件夹中初始化我们的博客，输入： 1hexo init blog  4小试牛刀cd到blog文件夹中，执行以下命令： 123hexo">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-06-29T10:25:07.823Z">
+<meta property="og:updated_time" content="2019-06-29T11:52:48.751Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="build-blog-with-github-hexo">
 <meta name="twitter:description" content="本文章记录本人利用hexo搭建博客并发布到github的全过程。 配置流程：1安装Node.js，命令行中输入 node -v，查看是否正确安装； 2安装Hexo：命令行输入： 1npm install -g hexo-cli  3初始化blog安装完成后，在blog文件夹中初始化我们的博客，输入： 1hexo init blog  4小试牛刀cd到blog文件夹中，执行以下命令： 123hexo">
@@ -295,7 +295,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chen hao">
       <meta itemprop="description" content="justchenhao">
-      <meta itemprop="image" content="http://i2.tiimg.com/692268/5b5fcf50073d7a71.jpg">
+      <meta itemprop="image" content="/images/pig.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -333,7 +333,7 @@
                 
               
 
-              <time title="创建时间：2019-06-29 17:58:50 / 修改时间：18:25:07" itemprop="dateCreated datePublished" datetime="2019-06-29T17:58:50+08:00">2019-06-29</time>
+              <time title="创建时间：2019-06-29 17:58:50 / 修改时间：19:52:48" itemprop="dateCreated datePublished" datetime="2019-06-29T17:58:50+08:00">2019-06-29</time>
             </span>
           
 
@@ -396,6 +396,32 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean <span class="comment"># 清理本地缓存</span></span><br><span class="line">hexo g <span class="comment">#编译文件</span></span><br><span class="line">hexo d <span class="comment"># 发布网站</span></span><br></pre></td></tr></table></figure>
 
 <p>这时，访问你的github个人主页（<a href="https://XXX.github.io），就能看到本网页了。" target="_blank" rel="noopener">https://XXX.github.io），就能看到本网页了。</a></p>
+<h2 id="给网页舔砖加瓦"><a href="#给网页舔砖加瓦" class="headerlink" title="给网页舔砖加瓦"></a>给网页舔砖加瓦</h2><h3 id="网站基本配置"><a href="#网站基本配置" class="headerlink" title="网站基本配置"></a>网站基本配置</h3><p>在站点配置文件_config.yml中，在site的配置中，可以对是网站标题、副标题、网站描述、作者、网站头像外部链接、网站语言等做修改。</p>
+<h3 id="添加图床"><a href="#添加图床" class="headerlink" title="添加图床"></a>添加图床</h3><p>简单说图床就是一个在网络上存储图片的地方，目的是为了节省本地服务器空间，加快图片打开速度。个人用户一般不会使用，主要是个人博客和小网站使用。常见的简易的图床网站有：<a href="http://www.tietuku.com/" target="_blank" rel="noopener">贴图库图片外链</a> 和<a href="https://www.qiniu.com/" target="_blank" rel="noopener">七牛云</a>。</p>
+<h3 id="修改网页主题"><a href="#修改网页主题" class="headerlink" title="修改网页主题"></a>修改网页主题</h3><p>如果你不喜欢Hexo默认的主题，可以更换不同的主题，主题传送门：<a href="https://link.zhihu.com/?target=https%3A//hexo.io/themes/" target="_blank" rel="noopener">Themes</a> 我自己使用的是Next主题，可以在blog目录中的themes文件夹中查看你自己主题是什么。<br>在blog根目录，输入命令，将Next主题下载到blog目录的themes主题下的next文件夹中：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+
+<p>打开<strong>站点</strong>的_config.yml配置文件，修改主题为next。</p>
+<p>打开<strong>主题</strong>的_config.yml配置文件，找到Scheme Settings，我选择的是Pisces。</p>
+<h3 id="增加侧栏菜单"><a href="#增加侧栏菜单" class="headerlink" title="增加侧栏菜单"></a>增加侧栏菜单</h3><p>默认的侧栏菜单条目有：首页、归档、标签、关于、搜索等。如果你想要增加其他的菜单条目，修改主题（theme）配置文件_config.yml里的Menu Settings中的menu和menu_icons两个地方。</p>
+<p>比如你要添加菜单项love，则需要在menu配置中增加love：/love设置好后，在命令行里输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page <span class="string">"你所要增加的菜单项名称（比如，love）"</span></span><br></pre></td></tr></table></figure>
+
+<p>这时会在博客根目录下的source文件里新建一个love文件夹，并生成初始化的index.md文件，你可以双击md文件对新建的页面自定义设计。</p>
+<h3 id="添加标签云"><a href="#添加标签云" class="headerlink" title="添加标签云"></a>添加标签云</h3><p>在主题配置文件中，找到tagcloud配置，把enable改为true。</p>
+<p>另外，还需要再安装标签云的插件：<code>hexo-tag-cloud</code>。该插件针对Hexo博客的标签云插件，旨在直观的展示标签的种类，美观大方且非常优雅。<br><a href="https://github.com/MikeCoder/hexo-tag-cloud" target="_blank" rel="noopener">插件的GitHub地址</a>，<a href="https://github.com/MikeCoder/hexo-tag-cloud/blob/master/README.ZH.md" target="_blank" rel="noopener">说明地址</a>，</p>
+<h4 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h4><p>进入到 <code>hexo</code> 的根目录，在 <code>package.json</code> 中添加依赖: <code>&quot;hexo-tag-cloud&quot;: &quot;2.0.*&quot;</code> ；</p>
+<p>打开命令行，输入以下命令安装插件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-tag-cloud@^2.0.* --save</span><br></pre></td></tr></table></figure>
+
+<p>使用命令行安装插件包的过程中可能会出现问题，安装失败，安装不完全。可以直接克隆插件到博客的插件文件夹<code>blog/node_modules</code>里。或者克隆到桌面，复制到博客的插件文件夹<code>blog/node_modules</code>里。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/MikeCoder/hexo-tag-cloud</span><br></pre></td></tr></table></figure>
+
+<h4 id="配置插件"><a href="#配置插件" class="headerlink" title="配置插件"></a>配置插件</h4><h3 id="swig-用户-Next主题在列"><a href="#swig-用户-Next主题在列" class="headerlink" title="swig 用户 (Next主题在列)"></a>swig 用户 (Next主题在列)</h3><p>在主题文件夹找到文件 <code>theme/next/layout/_macro/sidebar.swig</code>, 在倒数第三行以上的间隙，添加如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if site.tags.length &gt; 1 %&#125;&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;/js/tagcloud.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;/js/tagcanvas.js&quot;&gt;&lt;/script&gt;&lt;div class=&quot;widget-wrap&quot;&gt;    &lt;h3 class=&quot;widget-title&quot;&gt;Tag Cloud&lt;/h3&gt;    &lt;div id=&quot;myCanvasContainer&quot; class=&quot;widget tagcloud&quot;&gt;        &lt;canvas width=&quot;250&quot; height=&quot;250&quot; id=&quot;resCanvas&quot; style=&quot;width=100%&quot;&gt;            &#123;&#123; list_tags() &#125;&#125;        &lt;/canvas&gt;    &lt;/div&gt;&lt;/div&gt;&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="http://www.aomanhao.top/2019/04/20/hexo_Tag_cloud/" target="_blank" rel="noopener">Hexo博客建立标签云及效果展示</a>，</p>
+<p><a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">GitHub+Hexo 搭建个人网站详细教程</a>，</p>
 
       
     </div>
@@ -505,7 +531,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="http://i2.tiimg.com/692268/5b5fcf50073d7a71.jpg" alt="Chen hao">
+              <img class="site-author-image" itemprop="image" src="/images/pig.jpg" alt="Chen hao">
             
               <p class="site-author-name" itemprop="name">Chen hao</p>
               <div class="site-description motion-element" itemprop="description">justchenhao</div>
@@ -607,7 +633,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#配置流程："><span class="nav-number">1.</span> <span class="nav-text">配置流程：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1安装Node-js，"><span class="nav-number">1.1.</span> <span class="nav-text">1安装Node.js，</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2安装Hexo："><span class="nav-number">1.2.</span> <span class="nav-text">2安装Hexo：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3初始化blog"><span class="nav-number">1.3.</span> <span class="nav-text">3初始化blog</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4小试牛刀"><span class="nav-number">1.4.</span> <span class="nav-text">4小试牛刀</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5发布我的网站"><span class="nav-number">1.5.</span> <span class="nav-text">5发布我的网站</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#配置流程："><span class="nav-number">1.</span> <span class="nav-text">配置流程：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1安装Node-js，"><span class="nav-number">1.1.</span> <span class="nav-text">1安装Node.js，</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2安装Hexo："><span class="nav-number">1.2.</span> <span class="nav-text">2安装Hexo：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3初始化blog"><span class="nav-number">1.3.</span> <span class="nav-text">3初始化blog</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4小试牛刀"><span class="nav-number">1.4.</span> <span class="nav-text">4小试牛刀</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5发布我的网站"><span class="nav-number">1.5.</span> <span class="nav-text">5发布我的网站</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#给网页舔砖加瓦"><span class="nav-number">2.</span> <span class="nav-text">给网页舔砖加瓦</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#网站基本配置"><span class="nav-number">2.1.</span> <span class="nav-text">网站基本配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加图床"><span class="nav-number">2.2.</span> <span class="nav-text">添加图床</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改网页主题"><span class="nav-number">2.3.</span> <span class="nav-text">修改网页主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#增加侧栏菜单"><span class="nav-number">2.4.</span> <span class="nav-text">增加侧栏菜单</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加标签云"><span class="nav-number">2.5.</span> <span class="nav-text">添加标签云</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装插件"><span class="nav-number">2.5.1.</span> <span class="nav-text">安装插件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置插件"><span class="nav-number">2.5.2.</span> <span class="nav-text">配置插件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#swig-用户-Next主题在列"><span class="nav-number">2.6.</span> <span class="nav-text">swig 用户 (Next主题在列)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">3.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>
