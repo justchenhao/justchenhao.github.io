@@ -616,7 +616,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-07-01 21:30:40" itemprop="dateModified" datetime="2019-07-01T21:30:40+08:00">2019-07-01</time>
+                <time title="修改时间：2019-07-02 09:25:53" itemprop="dateModified" datetime="2019-07-02T09:25:53+08:00">2019-07-02</time>
               </span>
             
           
@@ -754,13 +754,14 @@
 <p>编译完成后，你会发现你的博客编译完成的代码目录public种生成了baidusitemap.xml和sitemap.xml；</p>
 <p>这时，你可以通过访问这两个文件：你的网址//sitemap.xml、你的网址//baidusitemap.xml；这也是百度或google爬虫抓取的文件；</p>
 <h4 id="验证google网站"><a href="#验证google网站" class="headerlink" title="验证google网站"></a>验证google网站</h4><p>–&gt;<strong>进入<a href="https://www.google.com/webmasters/tools/home?hl=zh-CN" target="_blank" rel="noopener">Google站点提交入口</a></strong>，添加你的站点…，</p>
-<p>–&gt;<strong>验证站点</strong>…，这里选择html文件验证，下载对应文件，将验证文件放在所应用的主题的source下<code>/themes/主题/source/</code>；</p>
+<p>–&gt;<strong>验证站点</strong>…，这里选择html文件验证，下载对应文件，将验证文件放在所应用的主题的source下<code>/themes/主题/source/</code>；google可以说是秒验证；</p>
 <p>–&gt;提交站点地图，google search console的在索引中点击站点地图，添加你的站点地图；（本处使用sitemap提交方法）</p>
+<p>google收录的速度很快，隔天就能收录；（0701验证通过，0702收录成功）</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">TIPS：向搜索引擎提交站点链接的几种方式</span><br><span class="line">1、主动推送：最为快速的提交方式，推荐您将站点当天新产出链接立即通过此方式推送给百度，以保证新链接可以及时被百度收录。</span><br><span class="line">2、自动推送：最为便捷的提交方式，请将自动推送的JS代码部署在站点的每一个页面源代码中，部署代码的页面在每次被浏览时，链接会被自动推送给百度。可以与主动推送配合使用。</span><br><span class="line">3、sitemap：您可以定期将网站链接放到sitemap中，然后将sitemap提交给百度。百度会周期性的抓取检查您提交的sitemap，对其中的链接进行处理，但收录速度慢于主动推送。</span><br><span class="line">4、手动提交：一次性提交链接给百度，可以使用此种方式。</span><br></pre></td></tr></table></figure>
 
 <h4 id="验证百度网站"><a href="#验证百度网站" class="headerlink" title="验证百度网站"></a>验证百度网站</h4><p>–&gt;<a href="http://zhanzhang.baidu.com/linksubmit/url" target="_blank" rel="noopener">百度链接提交</a>，提交你的域名，</p>
-<p>–&gt;验证站点，这里选择html文件验证，下载对应文件，将验证文件放在所应用的主题的source下<code>/themes/主题/source/</code>；</p>
-<p><code>sitemap</code>提交最上面提过了，直接提交<a href="http://tengj.top/baidusitemap.xml" target="_blank" rel="noopener">http://tengj.top/baidusitemap.xml</a> 就行，大家看下图就知道，一开始我是提交 <code>sitemap.xml</code>，里面是指向<code>github</code>的，结果主域校验失败了，后来切换到指向<code>tengj.top</code>域名的<code>baidusitemap.xml</code>就提交成功。</p>
+<p>–&gt;验证站点，这里选择html文件验证，下载对应文件，将验证文件放在所应用的主题的source下<code>/themes/主题/source/</code>；因为我是先验证的google，成功后再验证百度，提示失败；于是第二日继续验证，提示校正将在一天内完成；等待…</p>
+<p><code>sitemap</code>提交最上面提过了，直接提交<a href="http://xxx/baidusitemap.xml" target="_blank" rel="noopener">http://xxx/baidusitemap.xml</a> 就行，我提交 的<code>sitemap</code>里面是指向<code>github</code>的，结果主域校验失败了；</p>
 <h4 id="确认是否被收录"><a href="#确认是否被收录" class="headerlink" title="确认是否被收录"></a>确认是否被收录</h4><p>确认博客是否被搜索引擎收录，在百度或者谷歌输入下面格式来判断，如果能搜索到就说明被收录，否则就没有。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">site:写你要搜索的域名 # site:xxx.github.io</span><br></pre></td></tr></table></figure>
 
