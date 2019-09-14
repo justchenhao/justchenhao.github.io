@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="Justchenhao&#39;s Blog">
 <meta property="og:description" content="制作github托管的project page概述由于项目需求，需要给项目做一个展示主页，本文主要记录我使用Jekyll和github搭建Github project page的全过程； 先验知识Github pagegithub仅允许用户创建一个个人或组织主页（以用户名.github.io为仓库名），但允许用户创建N个项目主页，浏览器访问地址为用户名.github.io/项目名； 而gitthu">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-14T02:34:26.974Z">
+<meta property="og:updated_time" content="2019-09-14T02:41:48.103Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用github搭建项目主页">
 <meta name="twitter:description" content="制作github托管的project page概述由于项目需求，需要给项目做一个展示主页，本文主要记录我使用Jekyll和github搭建Github project page的全过程； 先验知识Github pagegithub仅允许用户创建一个个人或组织主页（以用户名.github.io为仓库名），但允许用户创建N个项目主页，浏览器访问地址为用户名.github.io/项目名； 而gitthu">
@@ -426,7 +426,7 @@
                 
               
 
-              <time title="创建时间：2019-09-14 09:43:36 / 修改时间：10:34:26" itemprop="dateCreated datePublished" datetime="2019-09-14T09:43:36+08:00">2019-09-14</time>
+              <time title="创建时间：2019-09-14 09:43:36 / 修改时间：10:41:48" itemprop="dateCreated datePublished" datetime="2019-09-14T09:43:36+08:00">2019-09-14</time>
             </span>
           
 
@@ -521,14 +521,14 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jekyll server</span><br></pre></td></tr></table></figure>
 
 <p>4，在本地浏览网页，进去浏览器，输入<a href="http://localhost:4000/，你就可以浏览主页了。" target="_blank" rel="noopener">http://localhost:4000/，你就可以浏览主页了。</a></p>
-<p>本地编译好之后呢，会在根目录看到一个_site的文件夹，里面就是编译好的网站文件，但是呢，如果你进入该文件夹，点击index.html，你会发现网站的风格有问题，那是浏览器没有找到对应Style样式，你可以用编辑器打开index.html找到 stylesheet这一行，改为如下即可，这样就能用相对路径关系找到对应的样式文件了：</p>
-<link rel="stylesheet" href="assets/css/style.css">；
-
+<p>本地编译好之后呢，会在根目录看到一个_site的文件夹，里面就是编译好的网站文件，但是呢，如果你进入该文件夹，点击index.html，你会发现网站的风格有问题，那是浏览器没有找到对应Style样式，你可以用编辑器打开index.html找到 stylesheet这一行，改为如下即可，这样就能用相对路径关系找到对应的样式文件了：link rel=”stylesheet” href=”assets/css/style.css”；</p>
 <h2 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h2><p>到现在为止，我们已经能在本地部署项目主页了，那么下一步就是如何将本地的主页部署到github上，让github托管我们的主页。</p>
-<h3 id="创建项目主页"><a href="#创建项目主页" class="headerlink" title="创建项目主页"></a>创建项目主页</h3><p>1，新建一个仓库，仓库名可以是项目名；</p>
+<p>1，新建一个仓库，仓库名可以是项目名；</p>
 <p>2， 点进仓库，点击右侧的Setting，页面下拉到Github Pages部分，在source中我们选择master branch，项目主页将会从该分支创建出来；</p>
 <p>3，clone仓库并更新仓库</p>
-<p>你将远程仓库clone到本地后，进入根目录，将之前在本地编译好的_site文件中的所有文件拷贝到该目录中，然后再git三连(add,commit,push)，这时内，你的网页就被推上云端了，过个几秒钟，你再访问用户名.github.io/仓库名，就能看到与本地部署一样效果的网页啦。</p>
+<p>你将远程仓库clone到本地后，进入根目录，将之前在本地编译好的_site文件中的所有文件拷贝到该目录中；</p>
+<p>4，推上云端，浏览网页</p>
+<p>然后再git三连(add,commit,push)，这时内，你的网页就被推上云端了，过个几秒钟，你再访问用户名.github.io/仓库名，就能看到与本地部署一样效果的网页啦。</p>
 <h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p> <a href="https://juejin.im/post/5c8af612e51d45648f582d69" target="_blank" rel="noopener">博客-使用 Jekyll 搭建 Github Pages 个人博客</a></p>
 <p><a href="https://www.jianshu.com/p/c093da2aaf3c" target="_blank" rel="noopener">GitHub 托管项目主页</a></p>
 
@@ -760,7 +760,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#制作github托管的project-page"><span class="nav-number">1.</span> <span class="nav-text">制作github托管的project page</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">1.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#先验知识"><span class="nav-number">1.2.</span> <span class="nav-text">先验知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Github-page"><span class="nav-number">1.2.1.</span> <span class="nav-text">Github page</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Jekyll"><span class="nav-number">1.2.2.</span> <span class="nav-text">Jekyll</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地配置"><span class="nav-number">1.3.</span> <span class="nav-text">本地配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#环境配置"><span class="nav-number">1.3.1.</span> <span class="nav-text">环境配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搭建项目"><span class="nav-number">1.3.2.</span> <span class="nav-text">搭建项目</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署到Github"><span class="nav-number">1.4.</span> <span class="nav-text">部署到Github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建项目主页"><span class="nav-number">1.4.1.</span> <span class="nav-text">创建项目主页</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-number">2.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#制作github托管的project-page"><span class="nav-number">1.</span> <span class="nav-text">制作github托管的project page</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">1.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#先验知识"><span class="nav-number">1.2.</span> <span class="nav-text">先验知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Github-page"><span class="nav-number">1.2.1.</span> <span class="nav-text">Github page</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Jekyll"><span class="nav-number">1.2.2.</span> <span class="nav-text">Jekyll</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地配置"><span class="nav-number">1.3.</span> <span class="nav-text">本地配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#环境配置"><span class="nav-number">1.3.1.</span> <span class="nav-text">环境配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搭建项目"><span class="nav-number">1.3.2.</span> <span class="nav-text">搭建项目</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署到Github"><span class="nav-number">1.4.</span> <span class="nav-text">部署到Github</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-number">2.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>
