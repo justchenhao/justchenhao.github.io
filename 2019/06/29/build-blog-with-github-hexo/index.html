@@ -70,7 +70,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '7.1.2',
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    sidebar: {"position":"left","display":"hide","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
     back2top_sidebar: false,
     fancybox: false,
@@ -95,7 +95,7 @@
 
 
   <meta name="description" content="本文章记录本人利用hexo搭建博客并发布到github的全过程。 配置流程：1安装Node.js，命令行中输入 node -v，查看是否正确安装； 2安装Hexo：命令行输入： 1npm install -g hexo-cli  3初始化blog安装完成后，在blog文件夹中初始化我们的博客，输入： 1hexo init blog  4小试牛刀cd到blog文件夹中，执行以下命令： 123hexo">
-<meta name="keywords" content="hexo,blog,github">
+<meta name="keywords" content="github,hexo,blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="build-blog-with-github-hexo">
 <meta property="og:url" content="https://justchenhao.github.io/2019/06/29/build-blog-with-github-hexo/index.html">
@@ -287,6 +287,22 @@
     
 
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-projects">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/project/" rel="section"><i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>项目</a>
 
   </li>
 
@@ -614,11 +630,11 @@
         
         <div class="post-tags">
           
+            <a href="/tags/github/" rel="tag"># github</a>
+          
             <a href="/tags/hexo/" rel="tag"># hexo</a>
           
             <a href="/tags/blog/" rel="tag"># blog</a>
-          
-            <a href="/tags/github/" rel="tag"># github</a>
           
         </div>
       
@@ -718,7 +734,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -762,7 +778,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -832,7 +854,7 @@
             <h3 class="widget-title">Tag Cloud</h3>
             <div id="myCanvasContainer" class="widget tagcloud">
                 <canvas width="250" height="250" id="resCanvas" style="width=100%">
-                    <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/system/">system</a><span class="tag-list-count">1</span></li></ul>
+                    <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/health/">health</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jekyll/">jekyll</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/project-page/">project page</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/system/">system</a><span class="tag-list-count">1</span></li></ul>
                 </canvas>
             </div>
         </div>
