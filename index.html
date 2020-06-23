@@ -382,6 +382,224 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://justchenhao.github.io/2020/06/23/修复EFI引导文件/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Chen hao">
+      <meta itemprop="description" content="justchenhao">
+      <meta itemprop="image" content="/images/pig.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Justchenhao's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2020/06/23/修复EFI引导文件/" class="post-title-link" itemprop="url">修复EFI引导文件</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2020-06-23 22:33:19 / 修改时间：23:03:51" itemprop="dateCreated datePublished" datetime="2020-06-23T22:33:19+08:00">2020-06-23</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2020/06/23/修复EFI引导文件/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/06/23/修复EFI引导文件/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="修复win10-EFI系统引导文件"><a href="#修复win10-EFI系统引导文件" class="headerlink" title="修复win10 EFI系统引导文件"></a>修复win10 EFI系统引导文件</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>一句话描述：拆除“非系统盘”的硬盘后，系统盘内系统无法正常启动。</p>
+<p>本计算机包括一个固态硬盘0，一个机械硬盘1，以及机械硬盘2。该固态盘为系统盘，但是其EFI引导文件存储在机械硬盘1中。而机械硬盘1损坏，无法读取文件内容。于是，将机械硬盘拆除，而计算机将无法正常机动。</p>
+<p>目标：希望修复EFI系统引导文件，正常启动系统盘中的系统。</p>
+<p>方式：在机械硬盘2中开辟一个EFI系统分区，并将正确的引导文件拷贝到其中。</p>
+<h2 id="0，一些科普"><a href="#0，一些科普" class="headerlink" title="0，一些科普"></a>0，一些科普</h2><h3 id="硬盘分区类型"><a href="#硬盘分区类型" class="headerlink" title="硬盘分区类型"></a>硬盘分区类型</h3><p>硬盘分区表有两种类型：</p>
+<ul>
+<li><p>GPT（GUID分区表）</p>
+<p>新型分区表类型，需对应UEFI启动，支持快速启动，支持2TB以上硬盘，目前的计算机普遍是该种类型。</p>
+</li>
+<li><p>MBR（Master Boot Record）</p>
+<p>传统分区表类型，需对应Legacy(BIOS)启动，旧机器上比较常见。</p>
+</li>
+</ul>
+<p>可以cmd键入diskmgmt.msc，在磁盘管理中查看硬盘的分区表类型。</p>
+<h3 id="BIOS类型"><a href="#BIOS类型" class="headerlink" title="BIOS类型"></a>BIOS类型</h3><p>BIOS有两种模式，传统的legacy模式和UEFI模式。</p>
+<ul>
+<li>传统BIOS只认识设备，不认识分区、不认识文件。</li>
+<li>UEFI认识设备，还认识设备ROM，还认识分区表、认识文件系统以及文件。</li>
+</ul>
+<p>可以cmd输入msinfo32查看系统摘要获取BIOS类型。</p>
+<h3 id="EFI系统分区（ESP）"><a href="#EFI系统分区（ESP）" class="headerlink" title="EFI系统分区（ESP）"></a>EFI系统分区（ESP）</h3><p>UEFI模式在GPT分区表的基础上，规定了一个EFI系统分区（EFI System Partition，ESP），ESP要格式化成FAT32。</p>
+<p>EFI启动文件要放在<code>\EFI\&lt;厂商&gt;</code>文件夹下面。</p>
+<ul>
+<li><p>比如Windows的UEFI启动文件，都在<code>\EFI\Microsoft</code>下面</p>
+</li>
+<li><p>比如Ubuntu的UEFI启动文件，都在<code>\EFI\ubuntu</code>下面</p>
+<p><code>\EFI\Boot</code>文件夹中存放要启动的efi文件，无论是<code>\EFI\Microsoft\Boot\Bootmgfw.efi</code>，还是<code>\EFI\ubuntu\grubx64.efi</code>，只要放到<code>\EFI\Boot</code>下并且改名<code>bootX64.efi</code>，就能在没添加文件启动项的情况下，默认加载对应的系统。<br>UEFI固件可从ESP加载EFI启动程式或者EFI应用程序。</p>
+</li>
+</ul>
+<h3 id="UEFI引导原理"><a href="#UEFI引导原理" class="headerlink" title="UEFI引导原理"></a>UEFI引导原理</h3><p>引导过程：上电–&gt;UEFI–&gt;GPT分区表–&gt;EFI系统分区（esp）–&gt;<code>\EFI\Microsoft\Boot\bootmgfw.efi</code>–&gt;<code>\EFI\Microsoft\Boot\BCD</code>→<code>\Windows\system32\winload.efi</code>。</p>
+<p><img src="https://raw.githubusercontent.com/justchenhao/figureBed/master/img/20200622191412-image.png" alt></p>
+<h2 id="1，制作winPE启动盘"><a href="#1，制作winPE启动盘" class="headerlink" title="1，制作winPE启动盘"></a>1，制作winPE启动盘</h2><p>PE是windows预装环境，在电脑无法开机时，可以通过PE系统修复电脑里的各种问题。这里我们选择IT天空的优启通这一PE。</p>
+<ul>
+<li><p>1）下载优启通PE，链接，</p>
+</li>
+<li><p>2）解压缩，点击EXE，选择U盘模式，选择U盘路径，开始制作启动盘；</p>
+<p><img src="https://raw.githubusercontent.com/justchenhao/figureBed/master/img/20200622191720-image.png" alt="20200622191720-image.png"></p>
+</li>
+</ul>
+<h2 id="2，准备EFI引导文件"><a href="#2，准备EFI引导文件" class="headerlink" title="2，准备EFI引导文件"></a>2，准备EFI引导文件</h2><p>这里，我从正常的笔记本电脑中，利用DiskGenius工具将EFI引导文件拷贝出来。</p>
+<p><img src="https://raw.githubusercontent.com/justchenhao/figureBed/master/img/20200622192152-image.png" alt></p>
+<p>但是，我们有个问题，从电脑A中提取出来的EFI引导文件，是否能够直接在电脑B中使用？若都是Windows10系统，是否能够直接使用？<br>若想启动windows，需要经过UEFI找GPT分区表，找EFI分区，载入bootmgfw.efi文件，载入BCD文件，最后加载winload.efi文件的过程。其中的BCD文件记录着Windows在“某某GUID的分区上”，如果换了一个电脑，windows的GUID位置可能不一样。如果直接使用，那么就可能找不到对应的GUID了，也就会启动失败，出现类似的启动错误：</p>
+<p><img src="https://raw.githubusercontent.com/justchenhao/figureBed/master/img/20200622192407-image.png" alt="20200622192407-image.png"></p>
+<h2 id="3，修改BCD文件"><a href="#3，修改BCD文件" class="headerlink" title="3，修改BCD文件"></a>3，修改BCD文件</h2><p>为了获得正确的适用于损伤电脑的BCD文件，我们需要读取该电脑的文件。这里，我们利用之前制作好的U盘启动工具，进入PE小系统。</p>
+<p>1）首先是要获得BCD文件所在盘的盘符，如果该盘符已存在则跳过这一步，若不存在，则：</p>
+<p>打开cmd，输入<code>diskpart</code>，进如diskpart命令模式</p>
+<p>查看硬盘（disk）信息：输入<code>list disk</code><br>查看分卷（vol）信息： 输入<code>list vol</code><br>找到EFI分区所在的disk和vol，假设为disk 0，vol 2<br>选择对应的disk和vol： <code>sel disk 0</code>， <code>sel vol 2</code><br>给EFI分区分配一个唯一的盘符： <code>assign letter=G:</code><br>退出diskpart模式：输入<code>exit</code></p>
+<p>2）生成新的BCD文件</p>
+<p>回到cmd，cd到BCD所在的目录，比如：<br>        <code>cd /d G:\EFI\Microsoft\Boot\</code><br>备份先前的BCD文件<br>        <code>ren BCD BCD.bak</code><br>生成新的BCD文件，其中，C盘对应位置为windows安装路径，<code>/s</code>表示目标系统分区的盘符，<code>/f</code>指定目标系统分区的固件类型（UEFI’, ‘BIOS’, or ‘ALL）<br>        <code>bcdboot C:\Windows /s G: /f ALL</code><br>于是，我们得到了更新后的引导文件。</p>
+<h2 id="4，新建EFI系统分区并拷贝引导文件"><a href="#4，新建EFI系统分区并拷贝引导文件" class="headerlink" title="4，新建EFI系统分区并拷贝引导文件"></a>4，新建EFI系统分区并拷贝引导文件</h2><p>在PE系统中，打开DiskGenius，首先在新的硬盘中开辟中一块EPS，而后将前一步得到的引导文件拷贝到该EPS的根目录中。</p>
+<p>到这一步为止，我们已经将正确的EFI引导文件考入到指定的ESP中，接下来，我们只需要重启计算机，引入BIOS，修改引导项，即可顺利进入win10~</p>
+<h2 id="一些小想法"><a href="#一些小想法" class="headerlink" title="一些小想法"></a>一些小想法</h2><ul>
+<li>Windows安装盘和EFI启动盘，可以是一个硬盘，也可以是不同的硬盘。UEFI启动模式下，EFI引导文件和windows系统文件可以在不同的分区。这就给后期的拔出硬盘操作带来了”系统崩溃“风险。如果拔出了一个硬盘里刚好有EFI启动文件，那就会导致系统无法正常启动。因此，一个明智的做法是，将引导盘存在一个比较稳定的磁盘里，该磁盘拔出概率小。</li>
+<li>我们在安装第一个系统时，需要由系统自动或手动建立一个EFI分区，用来存放启动文件，之后在其它分区安装系统时，会在之前的EFI分区存在对应的启动文件。这也就是为什么在多个磁盘中各装系统，结果引导文件仅存在于某单个盘中。这给我们的提示是，新电脑装备第一个系统时，最好将引导分区建立在某个稳定的磁盘上（SSD），以减少“磁盘损坏，引导文件丢失，而无法进入各个系统”的情况发生。</li>
+<li>我发现，在ntfs格式下的分区中，保存EFI引导文件，我的电脑也可以从利用该分区中的引导文件启动系统盘。（不道该方法的适用性如何，也许与主板有关。涉及到主板UEFI固件能够识别ntfs格式的引导文件）。在这种情况下，该分区在windows中是可见并可以编辑的，而FAT32格式的EFI分区不可见。</li>
+<li>可以在u盘中建立一个esp分区，引导正常的系统盘启动。</li>
+<li>在经常性断电的使用环境下，机械硬盘相对于固态硬盘更容易受损。我们需要留意机械硬盘的状态，减少硬盘损坏带来数据丢失的发现。当硬盘读取声音很大，或者出现拷贝硬盘数据十分缓慢的情况时，我们需要排查硬盘是否故障。磁盘的磁头很可能损坏，如果继续使用，会造成磁道不可逆的伤害。</li>
+</ul>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://zhuanlan.zhihu.com/p/31365115" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/31365115</a></p>
+<p><a href="https://blog.csdn.net/liao20081228/article/details/82591728" target="_blank" rel="noopener">https://blog.csdn.net/liao20081228/article/details/82591728</a></p>
+<p><a href="https://neosmart.net/wiki/fix-uefi-boot/#Fix_UEFI_Boot_in_Windows_8_81_or_10" target="_blank" rel="noopener">https://neosmart.net/wiki/fix-uefi-boot/#Fix_UEFI_Boot_in_Windows_8_81_or_10</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://justchenhao.github.io/2019/10/28/定时自动校园网登录/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2064,7 +2282,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -2118,7 +2336,15 @@
                     
                       
                     
-                    <span class="site-state-item-count">9</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -2171,7 +2397,7 @@
             <h3 class="widget-title">Tag Cloud</h3>
             <div id="myCanvasContainer" class="widget tagcloud">
                 <canvas width="250" height="250" id="resCanvas" style="width=100%">
-                    <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/automation/">automation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/body-building/">body building</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/health/">health</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jekyll/">jekyll</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/project-page/">project page</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/system/">system</a><span class="tag-list-count">1</span></li></ul>
+                    <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/UEFI/">UEFI</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/automation/">automation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/body-building/">body building</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/boot/">boot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/health/">health</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jekyll/">jekyll</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/project-page/">project page</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/system/">system</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a><span class="tag-list-count">1</span></li></ul>
                 </canvas>
             </div>
         </div>
@@ -2188,7 +2414,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -2706,6 +2932,8 @@
 
   
   
+    
+      
     
       
     

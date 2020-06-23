@@ -94,18 +94,23 @@
 
 
 
-  <meta name="description" content="制作github托管的project page概述由于项目需求，需要给项目做一个展示主页，本文主要记录我使用Jekyll和github搭建Github project page的全过程； 先验知识Github pagegithub仅允许用户创建一个个人或组织主页（以用户名.github.io为仓库名），但允许用户创建N个项目主页，浏览器访问地址为用户名.github.io/项目名； 而gitthu">
-<meta name="keywords" content="jekyll,github,project page">
+  <meta name="description" content="修复win10 EFI系统引导文件问题描述一句话描述：拆除“非系统盘”的硬盘后，系统盘内系统无法正常启动。 本计算机包括一个固态硬盘0，一个机械硬盘1，以及机械硬盘2。该固态盘为系统盘，但是其EFI引导文件存储在机械硬盘1中。而机械硬盘1损坏，无法读取文件内容。于是，将机械硬盘拆除，而计算机将无法正常机动。 目标：希望修复EFI系统引导文件，正常启动系统盘中的系统。 方式：在机械硬盘2中开辟一个E">
+<meta name="keywords" content="system,windows,boot,UEFI">
 <meta property="og:type" content="article">
-<meta property="og:title" content="利用github搭建项目主页">
-<meta property="og:url" content="https://justchenhao.github.io/2019/09/14/利用github搭建项目主页/index.html">
+<meta property="og:title" content="修复EFI引导文件">
+<meta property="og:url" content="https://justchenhao.github.io/2020/06/23/修复EFI引导文件/index.html">
 <meta property="og:site_name" content="Justchenhao&#39;s Blog">
-<meta property="og:description" content="制作github托管的project page概述由于项目需求，需要给项目做一个展示主页，本文主要记录我使用Jekyll和github搭建Github project page的全过程； 先验知识Github pagegithub仅允许用户创建一个个人或组织主页（以用户名.github.io为仓库名），但允许用户创建N个项目主页，浏览器访问地址为用户名.github.io/项目名； 而gitthu">
+<meta property="og:description" content="修复win10 EFI系统引导文件问题描述一句话描述：拆除“非系统盘”的硬盘后，系统盘内系统无法正常启动。 本计算机包括一个固态硬盘0，一个机械硬盘1，以及机械硬盘2。该固态盘为系统盘，但是其EFI引导文件存储在机械硬盘1中。而机械硬盘1损坏，无法读取文件内容。于是，将机械硬盘拆除，而计算机将无法正常机动。 目标：希望修复EFI系统引导文件，正常启动系统盘中的系统。 方式：在机械硬盘2中开辟一个E">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-14T02:41:48.103Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/justchenhao/figureBed/master/img/20200622191412-image.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/justchenhao/figureBed/master/img/20200622191720-image.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/justchenhao/figureBed/master/img/20200622192152-image.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/justchenhao/figureBed/master/img/20200622192407-image.png">
+<meta property="og:updated_time" content="2020-06-23T15:03:51.982Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="利用github搭建项目主页">
-<meta name="twitter:description" content="制作github托管的project page概述由于项目需求，需要给项目做一个展示主页，本文主要记录我使用Jekyll和github搭建Github project page的全过程； 先验知识Github pagegithub仅允许用户创建一个个人或组织主页（以用户名.github.io为仓库名），但允许用户创建N个项目主页，浏览器访问地址为用户名.github.io/项目名； 而gitthu">
+<meta name="twitter:title" content="修复EFI引导文件">
+<meta name="twitter:description" content="修复win10 EFI系统引导文件问题描述一句话描述：拆除“非系统盘”的硬盘后，系统盘内系统无法正常启动。 本计算机包括一个固态硬盘0，一个机械硬盘1，以及机械硬盘2。该固态盘为系统盘，但是其EFI引导文件存储在机械硬盘1中。而机械硬盘1损坏，无法读取文件内容。于是，将机械硬盘拆除，而计算机将无法正常机动。 目标：希望修复EFI系统引导文件，正常启动系统盘中的系统。 方式：在机械硬盘2中开辟一个E">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/justchenhao/figureBed/master/img/20200622191412-image.png">
 
 
 
@@ -113,7 +118,7 @@
 
   
   
-  <link rel="canonical" href="https://justchenhao.github.io/2019/09/14/利用github搭建项目主页/">
+  <link rel="canonical" href="https://justchenhao.github.io/2020/06/23/修复EFI引导文件/">
 
 
 
@@ -123,7 +128,7 @@
   };
 </script>
 
-  <title>利用github搭建项目主页 | Justchenhao's Blog</title>
+  <title>修复EFI引导文件 | Justchenhao's Blog</title>
   
 
 
@@ -383,7 +388,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://justchenhao.github.io/2019/09/14/利用github搭建项目主页/">
+    <link itemprop="mainEntityOfPage" href="https://justchenhao.github.io/2020/06/23/修复EFI引导文件/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chen hao">
@@ -400,7 +405,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">利用github搭建项目主页
+          <h1 class="post-title" itemprop="name headline">修复EFI引导文件
 
               
             
@@ -426,7 +431,7 @@
                 
               
 
-              <time title="创建时间：2019-09-14 09:43:36 / 修改时间：10:41:48" itemprop="dateCreated datePublished" datetime="2019-09-14T09:43:36+08:00">2019-09-14</time>
+              <time title="创建时间：2020-06-23 22:33:19 / 修改时间：23:03:51" itemprop="dateCreated datePublished" datetime="2020-06-23T22:33:19+08:00">2020-06-23</time>
             </span>
           
 
@@ -448,8 +453,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/09/14/利用github搭建项目主页/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/09/14/利用github搭建项目主页/" itemprop="commentCount"></span>
+                <a href="/2020/06/23/修复EFI引导文件/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/06/23/修复EFI引导文件/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -488,49 +493,67 @@
       
 
       
-        <h1 id="制作github托管的project-page"><a href="#制作github托管的project-page" class="headerlink" title="制作github托管的project page"></a>制作github托管的project page</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>由于项目需求，需要给项目做一个展示主页，本文主要记录我使用Jekyll和github搭建Github project page的全过程；</p>
-<h2 id="先验知识"><a href="#先验知识" class="headerlink" title="先验知识"></a>先验知识</h2><h3 id="Github-page"><a href="#Github-page" class="headerlink" title="Github page"></a>Github page</h3><p>github仅允许用户创建一个个人或组织主页（以用户名.github.io为仓库名），但允许用户创建N个项目主页，浏览器访问地址为用户名.github.io/项目名；</p>
-<p>而gitthub为了方便用户部署项目主页，提供了许多Jekyll主题<a href="https://github.com/pages-themes" target="_blank" rel="noopener">模板</a>；这里，使用比较常见的<a href="https://github.com/pages-themes/cayman" target="_blank" rel="noopener">The Cayman theme</a>；</p>
-<h3 id="Jekyll"><a href="#Jekyll" class="headerlink" title="Jekyll"></a>Jekyll</h3><p>Jekyll是一款静态网站生成工具，允许用户使用HTML、Markdown或Textile通过模块的方式建立所需网站，然后通过模板引擎Liquid（Liquid Templating Engine）来运行或者生成对应的静态网站文件。</p>
-<p>Jekyll在GitHub上使用较多，通过GitHub搭建自己的博客很多就是使用Jekyll；因为GitHub的渲染引擎默认为Jekyll。当然，也有很多用户使用Hexo不部署个人主页，可以在本地编译好网页后上传到github托管，这里就不再赘述，详情参考<a href="https://justchenhao.github.io/2019/06/29/build-blog-with-github-hexo/">该文章</a>。</p>
-<h2 id="本地配置"><a href="#本地配置" class="headerlink" title="本地配置"></a>本地配置</h2><h3 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h3><p>1，安装Ruby</p>
-<p>Jekyll是一款基于Ruby的插件，安装Ruby是必须的.</p>
-<p><a href="https://rubyinstaller.org/downloads/" target="_blank" rel="noopener">下载链接</a>中选择推荐版本安装即可，</p>
+        <h1 id="修复win10-EFI系统引导文件"><a href="#修复win10-EFI系统引导文件" class="headerlink" title="修复win10 EFI系统引导文件"></a>修复win10 EFI系统引导文件</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>一句话描述：拆除“非系统盘”的硬盘后，系统盘内系统无法正常启动。</p>
+<p>本计算机包括一个固态硬盘0，一个机械硬盘1，以及机械硬盘2。该固态盘为系统盘，但是其EFI引导文件存储在机械硬盘1中。而机械硬盘1损坏，无法读取文件内容。于是，将机械硬盘拆除，而计算机将无法正常机动。</p>
+<p>目标：希望修复EFI系统引导文件，正常启动系统盘中的系统。</p>
+<p>方式：在机械硬盘2中开辟一个EFI系统分区，并将正确的引导文件拷贝到其中。</p>
+<h2 id="0，一些科普"><a href="#0，一些科普" class="headerlink" title="0，一些科普"></a>0，一些科普</h2><h3 id="硬盘分区类型"><a href="#硬盘分区类型" class="headerlink" title="硬盘分区类型"></a>硬盘分区类型</h3><p>硬盘分区表有两种类型：</p>
 <ul>
-<li>如，<a href="https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.5.5-1/rubyinstaller-devkit-2.5.5-1-x64.exe" target="_blank" rel="noopener">Ruby+Devkit 2.5.5-1 (x64)</a>；</li>
+<li><p>GPT（GUID分区表）</p>
+<p>新型分区表类型，需对应UEFI启动，支持快速启动，支持2TB以上硬盘，目前的计算机普遍是该种类型。</p>
+</li>
+<li><p>MBR（Master Boot Record）</p>
+<p>传统分区表类型，需对应Legacy(BIOS)启动，旧机器上比较常见。</p>
+</li>
 </ul>
-<p>安装完后弹出 CMD 安装 MSYS2 的窗口，选择关闭即可，不影响后续配置；</p>
-<p>命令行输入查看是否安装完成：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ruby -v</span><br><span class="line">gem -v</span><br></pre></td></tr></table></figure>
-
-<p>2，安装bundler</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gem install bundler</span><br></pre></td></tr></table></figure>
-
-<p>bundler：The best way to manage a Ruby application’s gems</p>
-<p>3，安装 jekyll</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gem install jekyll</span><br></pre></td></tr></table></figure>
-
-<h3 id="搭建项目"><a href="#搭建项目" class="headerlink" title="搭建项目"></a>搭建项目</h3><p>1，在任意文件夹下，创建一个模板，输入以下命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jekyll new project-name</span><br></pre></td></tr></table></figure>
-
-<p>如果想要用其他模板，比如，我想要搭建一个项目的主页，参考模板<a href="https://github.com/pages-themes/cayman" target="_blank" rel="noopener">The Cayman theme</a>，将其clone到本地，cd到该文件夹中即可，进而继续后续操作；</p>
-<p>2， 在该文件中，安装依赖，命令行中运行：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bundle install</span><br></pre></td></tr></table></figure>
-
-<p>3，启动服务，输入以下命令：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jekyll server</span><br></pre></td></tr></table></figure>
-
-<p>4，在本地浏览网页，进去浏览器，输入<a href="http://localhost:4000/，你就可以浏览主页了。" target="_blank" rel="noopener">http://localhost:4000/，你就可以浏览主页了。</a></p>
-<p>本地编译好之后呢，会在根目录看到一个_site的文件夹，里面就是编译好的网站文件，但是呢，如果你进入该文件夹，点击index.html，你会发现网站的风格有问题，那是浏览器没有找到对应Style样式，你可以用编辑器打开index.html找到 stylesheet这一行，改为如下即可，这样就能用相对路径关系找到对应的样式文件了：link rel=”stylesheet” href=”assets/css/style.css”；</p>
-<h2 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h2><p>到现在为止，我们已经能在本地部署项目主页了，那么下一步就是如何将本地的主页部署到github上，让github托管我们的主页。</p>
-<p>1，新建一个仓库，仓库名可以是项目名；</p>
-<p>2， 点进仓库，点击右侧的Setting，页面下拉到Github Pages部分，在source中我们选择master branch，项目主页将会从该分支创建出来；</p>
-<p>3，clone仓库并更新仓库</p>
-<p>你将远程仓库clone到本地后，进入根目录，将之前在本地编译好的_site文件中的所有文件拷贝到该目录中；</p>
-<p>4，推上云端，浏览网页</p>
-<p>然后再git三连(add,commit,push)，这时内，你的网页就被推上云端了，过个几秒钟，你再访问用户名.github.io/仓库名，就能看到与本地部署一样效果的网页啦。</p>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p> <a href="https://juejin.im/post/5c8af612e51d45648f582d69" target="_blank" rel="noopener">博客-使用 Jekyll 搭建 Github Pages 个人博客</a></p>
-<p><a href="https://www.jianshu.com/p/c093da2aaf3c" target="_blank" rel="noopener">GitHub 托管项目主页</a></p>
+<p>可以cmd键入diskmgmt.msc，在磁盘管理中查看硬盘的分区表类型。</p>
+<h3 id="BIOS类型"><a href="#BIOS类型" class="headerlink" title="BIOS类型"></a>BIOS类型</h3><p>BIOS有两种模式，传统的legacy模式和UEFI模式。</p>
+<ul>
+<li>传统BIOS只认识设备，不认识分区、不认识文件。</li>
+<li>UEFI认识设备，还认识设备ROM，还认识分区表、认识文件系统以及文件。</li>
+</ul>
+<p>可以cmd输入msinfo32查看系统摘要获取BIOS类型。</p>
+<h3 id="EFI系统分区（ESP）"><a href="#EFI系统分区（ESP）" class="headerlink" title="EFI系统分区（ESP）"></a>EFI系统分区（ESP）</h3><p>UEFI模式在GPT分区表的基础上，规定了一个EFI系统分区（EFI System Partition，ESP），ESP要格式化成FAT32。</p>
+<p>EFI启动文件要放在<code>\EFI\&lt;厂商&gt;</code>文件夹下面。</p>
+<ul>
+<li><p>比如Windows的UEFI启动文件，都在<code>\EFI\Microsoft</code>下面</p>
+</li>
+<li><p>比如Ubuntu的UEFI启动文件，都在<code>\EFI\ubuntu</code>下面</p>
+<p><code>\EFI\Boot</code>文件夹中存放要启动的efi文件，无论是<code>\EFI\Microsoft\Boot\Bootmgfw.efi</code>，还是<code>\EFI\ubuntu\grubx64.efi</code>，只要放到<code>\EFI\Boot</code>下并且改名<code>bootX64.efi</code>，就能在没添加文件启动项的情况下，默认加载对应的系统。<br>UEFI固件可从ESP加载EFI启动程式或者EFI应用程序。</p>
+</li>
+</ul>
+<h3 id="UEFI引导原理"><a href="#UEFI引导原理" class="headerlink" title="UEFI引导原理"></a>UEFI引导原理</h3><p>引导过程：上电–&gt;UEFI–&gt;GPT分区表–&gt;EFI系统分区（esp）–&gt;<code>\EFI\Microsoft\Boot\bootmgfw.efi</code>–&gt;<code>\EFI\Microsoft\Boot\BCD</code>→<code>\Windows\system32\winload.efi</code>。</p>
+<p><img src="https://raw.githubusercontent.com/justchenhao/figureBed/master/img/20200622191412-image.png" alt></p>
+<h2 id="1，制作winPE启动盘"><a href="#1，制作winPE启动盘" class="headerlink" title="1，制作winPE启动盘"></a>1，制作winPE启动盘</h2><p>PE是windows预装环境，在电脑无法开机时，可以通过PE系统修复电脑里的各种问题。这里我们选择IT天空的优启通这一PE。</p>
+<ul>
+<li><p>1）下载优启通PE，链接，</p>
+</li>
+<li><p>2）解压缩，点击EXE，选择U盘模式，选择U盘路径，开始制作启动盘；</p>
+<p><img src="https://raw.githubusercontent.com/justchenhao/figureBed/master/img/20200622191720-image.png" alt="20200622191720-image.png"></p>
+</li>
+</ul>
+<h2 id="2，准备EFI引导文件"><a href="#2，准备EFI引导文件" class="headerlink" title="2，准备EFI引导文件"></a>2，准备EFI引导文件</h2><p>这里，我从正常的笔记本电脑中，利用DiskGenius工具将EFI引导文件拷贝出来。</p>
+<p><img src="https://raw.githubusercontent.com/justchenhao/figureBed/master/img/20200622192152-image.png" alt></p>
+<p>但是，我们有个问题，从电脑A中提取出来的EFI引导文件，是否能够直接在电脑B中使用？若都是Windows10系统，是否能够直接使用？<br>若想启动windows，需要经过UEFI找GPT分区表，找EFI分区，载入bootmgfw.efi文件，载入BCD文件，最后加载winload.efi文件的过程。其中的BCD文件记录着Windows在“某某GUID的分区上”，如果换了一个电脑，windows的GUID位置可能不一样。如果直接使用，那么就可能找不到对应的GUID了，也就会启动失败，出现类似的启动错误：</p>
+<p><img src="https://raw.githubusercontent.com/justchenhao/figureBed/master/img/20200622192407-image.png" alt="20200622192407-image.png"></p>
+<h2 id="3，修改BCD文件"><a href="#3，修改BCD文件" class="headerlink" title="3，修改BCD文件"></a>3，修改BCD文件</h2><p>为了获得正确的适用于损伤电脑的BCD文件，我们需要读取该电脑的文件。这里，我们利用之前制作好的U盘启动工具，进入PE小系统。</p>
+<p>1）首先是要获得BCD文件所在盘的盘符，如果该盘符已存在则跳过这一步，若不存在，则：</p>
+<p>打开cmd，输入<code>diskpart</code>，进如diskpart命令模式</p>
+<p>查看硬盘（disk）信息：输入<code>list disk</code><br>查看分卷（vol）信息： 输入<code>list vol</code><br>找到EFI分区所在的disk和vol，假设为disk 0，vol 2<br>选择对应的disk和vol： <code>sel disk 0</code>， <code>sel vol 2</code><br>给EFI分区分配一个唯一的盘符： <code>assign letter=G:</code><br>退出diskpart模式：输入<code>exit</code></p>
+<p>2）生成新的BCD文件</p>
+<p>回到cmd，cd到BCD所在的目录，比如：<br>        <code>cd /d G:\EFI\Microsoft\Boot\</code><br>备份先前的BCD文件<br>        <code>ren BCD BCD.bak</code><br>生成新的BCD文件，其中，C盘对应位置为windows安装路径，<code>/s</code>表示目标系统分区的盘符，<code>/f</code>指定目标系统分区的固件类型（UEFI’, ‘BIOS’, or ‘ALL）<br>        <code>bcdboot C:\Windows /s G: /f ALL</code><br>于是，我们得到了更新后的引导文件。</p>
+<h2 id="4，新建EFI系统分区并拷贝引导文件"><a href="#4，新建EFI系统分区并拷贝引导文件" class="headerlink" title="4，新建EFI系统分区并拷贝引导文件"></a>4，新建EFI系统分区并拷贝引导文件</h2><p>在PE系统中，打开DiskGenius，首先在新的硬盘中开辟中一块EPS，而后将前一步得到的引导文件拷贝到该EPS的根目录中。</p>
+<p>到这一步为止，我们已经将正确的EFI引导文件考入到指定的ESP中，接下来，我们只需要重启计算机，引入BIOS，修改引导项，即可顺利进入win10~</p>
+<h2 id="一些小想法"><a href="#一些小想法" class="headerlink" title="一些小想法"></a>一些小想法</h2><ul>
+<li>Windows安装盘和EFI启动盘，可以是一个硬盘，也可以是不同的硬盘。UEFI启动模式下，EFI引导文件和windows系统文件可以在不同的分区。这就给后期的拔出硬盘操作带来了”系统崩溃“风险。如果拔出了一个硬盘里刚好有EFI启动文件，那就会导致系统无法正常启动。因此，一个明智的做法是，将引导盘存在一个比较稳定的磁盘里，该磁盘拔出概率小。</li>
+<li>我们在安装第一个系统时，需要由系统自动或手动建立一个EFI分区，用来存放启动文件，之后在其它分区安装系统时，会在之前的EFI分区存在对应的启动文件。这也就是为什么在多个磁盘中各装系统，结果引导文件仅存在于某单个盘中。这给我们的提示是，新电脑装备第一个系统时，最好将引导分区建立在某个稳定的磁盘上（SSD），以减少“磁盘损坏，引导文件丢失，而无法进入各个系统”的情况发生。</li>
+<li>我发现，在ntfs格式下的分区中，保存EFI引导文件，我的电脑也可以从利用该分区中的引导文件启动系统盘。（不道该方法的适用性如何，也许与主板有关。涉及到主板UEFI固件能够识别ntfs格式的引导文件）。在这种情况下，该分区在windows中是可见并可以编辑的，而FAT32格式的EFI分区不可见。</li>
+<li>可以在u盘中建立一个esp分区，引导正常的系统盘启动。</li>
+<li>在经常性断电的使用环境下，机械硬盘相对于固态硬盘更容易受损。我们需要留意机械硬盘的状态，减少硬盘损坏带来数据丢失的发现。当硬盘读取声音很大，或者出现拷贝硬盘数据十分缓慢的情况时，我们需要排查硬盘是否故障。磁盘的磁头很可能损坏，如果继续使用，会造成磁道不可逆的伤害。</li>
+</ul>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://zhuanlan.zhihu.com/p/31365115" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/31365115</a></p>
+<p><a href="https://blog.csdn.net/liao20081228/article/details/82591728" target="_blank" rel="noopener">https://blog.csdn.net/liao20081228/article/details/82591728</a></p>
+<p><a href="https://neosmart.net/wiki/fix-uefi-boot/#Fix_UEFI_Boot_in_Windows_8_81_or_10" target="_blank" rel="noopener">https://neosmart.net/wiki/fix-uefi-boot/#Fix_UEFI_Boot_in_Windows_8_81_or_10</a></p>
 
       
     </div>
@@ -557,11 +580,13 @@
         
         <div class="post-tags">
           
-            <a href="/tags/jekyll/" rel="tag"># jekyll</a>
+            <a href="/tags/system/" rel="tag"># system</a>
           
-            <a href="/tags/github/" rel="tag"># github</a>
+            <a href="/tags/windows/" rel="tag"># windows</a>
           
-            <a href="/tags/project-page/" rel="tag"># project page</a>
+            <a href="/tags/boot/" rel="tag"># boot</a>
+          
+            <a href="/tags/UEFI/" rel="tag"># UEFI</a>
           
         </div>
       
@@ -574,8 +599,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/04/改善颈部状态/" rel="next" title="改善颈部状态">
-                <i class="fa fa-chevron-left"></i> 改善颈部状态
+              <a href="/2019/10/28/定时自动校园网登录/" rel="next" title="定时自动校园网登录">
+                <i class="fa fa-chevron-left"></i> 定时自动校园网登录
               </a>
             
           </div>
@@ -583,10 +608,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/10/13/健身从零到1/" rel="prev" title="健身从零到1">
-                健身从零到1 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -776,7 +797,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#制作github托管的project-page"><span class="nav-number">1.</span> <span class="nav-text">制作github托管的project page</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">1.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#先验知识"><span class="nav-number">1.2.</span> <span class="nav-text">先验知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Github-page"><span class="nav-number">1.2.1.</span> <span class="nav-text">Github page</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Jekyll"><span class="nav-number">1.2.2.</span> <span class="nav-text">Jekyll</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地配置"><span class="nav-number">1.3.</span> <span class="nav-text">本地配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#环境配置"><span class="nav-number">1.3.1.</span> <span class="nav-text">环境配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搭建项目"><span class="nav-number">1.3.2.</span> <span class="nav-text">搭建项目</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署到Github"><span class="nav-number">1.4.</span> <span class="nav-text">部署到Github</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-number">2.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#修复win10-EFI系统引导文件"><span class="nav-number">1.</span> <span class="nav-text">修复win10 EFI系统引导文件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题描述"><span class="nav-number">1.1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0，一些科普"><span class="nav-number">1.2.</span> <span class="nav-text">0，一些科普</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#硬盘分区类型"><span class="nav-number">1.2.1.</span> <span class="nav-text">硬盘分区类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BIOS类型"><span class="nav-number">1.2.2.</span> <span class="nav-text">BIOS类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#EFI系统分区（ESP）"><span class="nav-number">1.2.3.</span> <span class="nav-text">EFI系统分区（ESP）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#UEFI引导原理"><span class="nav-number">1.2.4.</span> <span class="nav-text">UEFI引导原理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1，制作winPE启动盘"><span class="nav-number">1.3.</span> <span class="nav-text">1，制作winPE启动盘</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2，准备EFI引导文件"><span class="nav-number">1.4.</span> <span class="nav-text">2，准备EFI引导文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3，修改BCD文件"><span class="nav-number">1.5.</span> <span class="nav-text">3，修改BCD文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4，新建EFI系统分区并拷贝引导文件"><span class="nav-number">1.6.</span> <span class="nav-text">4，新建EFI系统分区并拷贝引导文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一些小想法"><span class="nav-number">1.7.</span> <span class="nav-text">一些小想法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">1.8.</span> <span class="nav-text">参考</span></a></li></ol></li></ol></div>
             
 
           </div>
