@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="Justchenhao&#39;s Blog">
 <meta property="og:description" content="模拟网页自动登录校园网并定时登录问题描述近些天，某校园网出现频繁断线问题，需要我们需要频繁重网络，同时给远程办公TV的使用带来困难。因此需要设计一个自动重连校园网的方案。 使用环境：XXX校园网； 目标：每日定时自动连接校园网； 为了自动连接校园网，我们需要准备好校园网账号密码，以及编写程序模拟网页点击登录按钮，并且设定windows定时计划； 先验知识传统CURL式爬虫过程curl是利用URL语">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-28T11:24:02.689Z">
+<meta property="og:updated_time" content="2021-08-23T08:42:36.100Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="定时自动校园网登录">
 <meta name="twitter:description" content="模拟网页自动登录校园网并定时登录问题描述近些天，某校园网出现频繁断线问题，需要我们需要频繁重网络，同时给远程办公TV的使用带来困难。因此需要设计一个自动重连校园网的方案。 使用环境：XXX校园网； 目标：每日定时自动连接校园网； 为了自动连接校园网，我们需要准备好校园网账号密码，以及编写程序模拟网页点击登录按钮，并且设定windows定时计划； 先验知识传统CURL式爬虫过程curl是利用URL语">
@@ -426,13 +426,23 @@
                 
               
 
-              <time title="创建时间：2019-10-28 19:15:09 / 修改时间：19:24:02" itemprop="dateCreated datePublished" datetime="2019-10-28T19:15:09+08:00">2019-10-28</time>
+              <time title="创建时间：2019-10-28 19:15:09" itemprop="dateCreated datePublished" datetime="2019-10-28T19:15:09+08:00">2019-10-28</time>
             </span>
           
 
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2021-08-23 16:42:36" itemprop="dateModified" datetime="2021-08-23T16:42:36+08:00">2021-08-23</time>
+              </span>
             
           
 
@@ -511,7 +521,7 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line">user_name=<span class="string">'****'</span></span><br><span class="line">pwd=<span class="string">'****'</span></span><br><span class="line">driver = webdriver.Chrome() </span><br><span class="line"><span class="comment"># 设置浏览器窗口的位置和大小</span></span><br><span class="line">driver.set_window_position(<span class="number">20</span>,<span class="number">40</span>)</span><br><span class="line">driver.set_window_size(<span class="number">1100</span>,<span class="number">700</span>)</span><br><span class="line"><span class="comment"># 打开一个页面（如校园网登录页面）</span></span><br><span class="line">driver.get(<span class="string">"****"</span>)</span><br><span class="line">driver.find_element_by_id(<span class="string">'username'</span>).send_keys(user_name)</span><br><span class="line">driver.find_element_by_id(<span class="string">'password'</span>).send_keys(pwd)</span><br><span class="line">driver.find_element_by_id(<span class="string">'login'</span>).click()</span><br></pre></td></tr></table></figure>
 
 <p>5，编写bat脚本</p>
-<p>新建auto_login.bat文件，输入<code>python auto_login.py</code></p>
+<p>新建auto_login.bat文件，输入<code>python {path2here}/auto_login.py</code></p>
 <h3 id="设置定时计划"><a href="#设置定时计划" class="headerlink" title="设置定时计划"></a>设置定时计划</h3><p>要求每天上午8点定时执行自动登录脚本；</p>
 <p>win中搜索任务计划程序；按需填写相应内容，选择启动时间，选择脚本位置，即可；</p>
 <p>注意配置完成之后，还需要其安全选项，选择再“不管用户是否登录时都要运行”，这样可以在用户没有登录时执行计划；</p>
@@ -642,7 +652,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -702,7 +712,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">12</span>
+                      
+                    
+                    <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -772,7 +784,7 @@
             <h3 class="widget-title">Tag Cloud</h3>
             <div id="myCanvasContainer" class="widget tagcloud">
                 <canvas width="250" height="250" id="resCanvas" style="width=100%">
-                    <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/UEFI/">UEFI</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/automation/">automation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/body-building/">body building</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/boot/">boot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/health/">health</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jekyll/">jekyll</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/project-page/">project page</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/system/">system</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a><span class="tag-list-count">1</span></li></ul>
+                    <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/UEFI/">UEFI</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/automation/">automation</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/body-building/">body building</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/boot/">boot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/health/">health</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jekyll/">jekyll</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/project-page/">project page</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/research/">research</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/system/">system</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a><span class="tag-list-count">1</span></li></ul>
                 </canvas>
             </div>
         </div>

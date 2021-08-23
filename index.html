@@ -382,6 +382,182 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://justchenhao.github.io/2021/08/23/arxiv-alerts/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Chen hao">
+      <meta itemprop="description" content="justchenhao">
+      <meta itemprop="image" content="/images/pig.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Justchenhao's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2021/08/23/arxiv-alerts/" class="post-title-link" itemprop="url">arxiv_alerts</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2021-08-23 16:39:11 / 修改时间：17:03:09" itemprop="dateCreated datePublished" datetime="2021-08-23T16:39:11+08:00">2021-08-23</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2021/08/23/arxiv-alerts/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/08/23/arxiv-alerts/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="利用Github实现自动化筛选日更Arixv文章"><a href="#利用Github实现自动化筛选日更Arixv文章" class="headerlink" title="利用Github实现自动化筛选日更Arixv文章"></a>利用Github实现自动化筛选日更Arixv文章</h1><h1 id="配置日更arxiv文章的自动化流程"><a href="#配置日更arxiv文章的自动化流程" class="headerlink" title="配置日更arxiv文章的自动化流程"></a>配置日更arxiv文章的自动化流程</h1><h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><p>1、及时获取最新的感兴趣的arxiv论文，可以通过预设关键字，并匹配文章摘要，抓取感兴趣文章；</p>
+<p>2、自动化流程，通过github的action方法自动实现，定时操作（比如，每日更新一次），我们仅需查看特定仓库issue即可。</p>
+<h2 id="总体方案"><a href="#总体方案" class="headerlink" title="总体方案"></a>总体方案</h2><p>1、python抓取特定arxiv文章并推送到github某仓库中，推送信息以issue的形式呈现，方便删除与关闭操作；</p>
+<p>2、利用Github的Action功能实现定时抓取流程；</p>
+<h2 id="1、抓取文章并推送"><a href="#1、抓取文章并推送" class="headerlink" title="1、抓取文章并推送"></a>1、抓取文章并推送</h2><p>这里使用 <a href="https://github.com/kobiso/get-daily-arxiv-noti" target="_blank" rel="noopener">https://github.com/kobiso/get-daily-arxiv-noti</a> 中的方法。</p>
+<p>将该仓库克隆到本地后，需要配置config.py的内容：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Authentication for user filing issue (must have read/write access to repository to add issue to)</span></span><br><span class="line">USERNAME = <span class="string">'changeme'</span> <span class="comment">#你的github账户名</span></span><br><span class="line">TOKEN = <span class="string">'changeme'</span> <span class="comment">#你的个人访问令牌</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># The repository to add this issue to</span></span><br><span class="line">REPO_OWNER = <span class="string">'changeme'</span> <span class="comment">#推送到的仓库拥有者账户名</span></span><br><span class="line">REPO_NAME = <span class="string">'changeme'</span> <span class="comment">#推送到的仓库名</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Set new submission url of subject</span></span><br><span class="line">NEW_SUB_URL = <span class="string">'https://arxiv.org/list/cs/new'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Keywords to search</span></span><br><span class="line">KEYWORD_LIST = [<span class="string">"changeme"</span>]</span><br></pre></td></tr></table></figure>
+
+<p>本地运行方法：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python <span class="built_in">PATH</span>-TO-CODE/main.py</span><br></pre></td></tr></table></figure>
+
+<p>这时，我们已经可以实现手动推送功能了，但是如果要自动化该流程，我们需要把本地代码上传到github某仓库中，并借助Action功能实现自动化流程。</p>
+<h2 id="2、在github上配置Action实现自动化"><a href="#2、在github上配置Action实现自动化" class="headerlink" title="2、在github上配置Action实现自动化"></a>2、在github上配置Action实现自动化</h2><p>在仓库中新建文件夹<code>.github/workflows/</code>，新建<code>main.yml</code>文件：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">"daily alerts"</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line"><span class="attr">  push:</span></span><br><span class="line"><span class="attr">    branches:</span></span><br><span class="line"><span class="bullet">      -</span> <span class="string">master</span></span><br><span class="line"><span class="attr">  schedule:</span></span><br><span class="line"><span class="attr">    -   cron:</span> <span class="string">"0 0 * * *"</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line"><span class="attr">  backup:</span></span><br><span class="line"><span class="attr">    runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line"><span class="attr">    name:</span> <span class="string">Backup</span></span><br><span class="line"><span class="attr">    timeout-minutes:</span> <span class="number">15</span></span><br><span class="line"><span class="attr">    steps:</span></span><br><span class="line"><span class="attr">      -   uses:</span> <span class="string">actions/checkout@v2</span></span><br><span class="line"><span class="attr">      -   name:</span> <span class="string">Set</span> <span class="string">up</span> <span class="string">Python</span> <span class="number">3.8</span></span><br><span class="line"><span class="attr">          uses:</span> <span class="string">actions/setup-python@v1</span></span><br><span class="line"><span class="attr">          with:</span></span><br><span class="line"><span class="attr">            python-version:</span> <span class="number">3.8</span></span><br><span class="line"></span><br><span class="line"><span class="attr">      -   name:</span> <span class="string">Setup</span> <span class="string">dependencies</span></span><br><span class="line"><span class="attr">          run:</span> <span class="string">|</span></span><br><span class="line"><span class="string">            if [ -f requirements.txt ]; then pip install -r requirements.txt; fi</span></span><br><span class="line"><span class="string"></span><span class="attr">      -   name:</span> <span class="string">Run</span> <span class="string">backup</span></span><br><span class="line"><span class="attr">          run:</span> <span class="string">python</span> <span class="string">main.py</span></span><br><span class="line"></span><br><span class="line"><span class="attr">      -   name:</span> <span class="string">Commit</span> <span class="string">changes</span></span><br><span class="line"><span class="attr">          uses:</span> <span class="string">elstudio/actions-js-build/commit@v3</span></span><br><span class="line"><span class="attr">          with:</span></span><br><span class="line"><span class="attr">            commitMessage:</span> <span class="string">Automated</span> <span class="string">snapshot</span></span><br></pre></td></tr></table></figure>
+
+<p>根据以上yml文件，github会定时触发预定流程（这里是每天0点更新，或者是在更新仓库后也会触发动作）；<br>具体触发过程：在指定系统下，安装依赖指定文件（可以由requirements.txt指定），然后执行<code>main.py</code>文件，最后，提交变化更新本仓库；</p>
+<h2 id="推送效果样例"><a href="#推送效果样例" class="headerlink" title="推送效果样例"></a>推送效果样例</h2><p>这里展示一个样例，<a href="https://github.com/kobiso/daily-arxiv-noti/issues" target="_blank" rel="noopener">https://github.com/kobiso/daily-arxiv-noti/issues</a></p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p>arxiv文章自动issue：<a href="https://github.com/kobiso/get-daily-arxiv-noti" target="_blank" rel="noopener">https://github.com/kobiso/get-daily-arxiv-noti</a></p>
+<p>配置github个人访问令牌：<a href="https://docs.github.com/cn/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token" target="_blank" rel="noopener">https://docs.github.com/cn/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://justchenhao.github.io/2020/06/23/修复EFI引导文件/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -645,13 +821,23 @@
                 
               
 
-              <time title="创建时间：2019-10-28 19:15:09 / 修改时间：19:24:02" itemprop="dateCreated datePublished" datetime="2019-10-28T19:15:09+08:00">2019-10-28</time>
+              <time title="创建时间：2019-10-28 19:15:09" itemprop="dateCreated datePublished" datetime="2019-10-28T19:15:09+08:00">2019-10-28</time>
             </span>
           
 
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2021-08-23 16:42:36" itemprop="dateModified" datetime="2021-08-23T16:42:36+08:00">2021-08-23</time>
+              </span>
             
           
 
@@ -724,7 +910,7 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line">user_name=<span class="string">'****'</span></span><br><span class="line">pwd=<span class="string">'****'</span></span><br><span class="line">driver = webdriver.Chrome() </span><br><span class="line"><span class="comment"># 设置浏览器窗口的位置和大小</span></span><br><span class="line">driver.set_window_position(<span class="number">20</span>,<span class="number">40</span>)</span><br><span class="line">driver.set_window_size(<span class="number">1100</span>,<span class="number">700</span>)</span><br><span class="line"><span class="comment"># 打开一个页面（如校园网登录页面）</span></span><br><span class="line">driver.get(<span class="string">"****"</span>)</span><br><span class="line">driver.find_element_by_id(<span class="string">'username'</span>).send_keys(user_name)</span><br><span class="line">driver.find_element_by_id(<span class="string">'password'</span>).send_keys(pwd)</span><br><span class="line">driver.find_element_by_id(<span class="string">'login'</span>).click()</span><br></pre></td></tr></table></figure>
 
 <p>5，编写bat脚本</p>
-<p>新建auto_login.bat文件，输入<code>python auto_login.py</code></p>
+<p>新建auto_login.bat文件，输入<code>python {path2here}/auto_login.py</code></p>
 <h3 id="设置定时计划"><a href="#设置定时计划" class="headerlink" title="设置定时计划"></a>设置定时计划</h3><p>要求每天上午8点定时执行自动登录脚本；</p>
 <p>win中搜索任务计划程序；按需填写相应内容，选择启动时间，选择脚本位置，即可；</p>
 <p>注意配置完成之后，还需要其安全选项，选择再“不管用户是否登录时都要运行”，这样可以在用户没有登录时执行计划；</p>
@@ -2282,7 +2468,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -2342,7 +2528,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">12</span>
+                      
+                    
+                    <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -2395,7 +2583,7 @@
             <h3 class="widget-title">Tag Cloud</h3>
             <div id="myCanvasContainer" class="widget tagcloud">
                 <canvas width="250" height="250" id="resCanvas" style="width=100%">
-                    <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/UEFI/">UEFI</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/automation/">automation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/body-building/">body building</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/boot/">boot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/health/">health</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jekyll/">jekyll</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/project-page/">project page</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/system/">system</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a><span class="tag-list-count">1</span></li></ul>
+                    <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/UEFI/">UEFI</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/automation/">automation</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/body-building/">body building</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/boot/">boot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/health/">health</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jekyll/">jekyll</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/project-page/">project page</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/research/">research</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/system/">system</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a><span class="tag-list-count">1</span></li></ul>
                 </canvas>
             </div>
         </div>
@@ -2930,6 +3118,8 @@
 
   
   
+    
+      
     
       
     
