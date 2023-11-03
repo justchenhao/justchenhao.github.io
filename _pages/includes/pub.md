@@ -4,7 +4,7 @@
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="images/Continous_CD.png"><img src='images/Continous_CD.png' alt="Continous_CD" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
-<a class=PaperTitle href="https://arxiv.org/abs/2205.13769"><b>Remote Sensing Image Change Detection Towards Continuous Bitemporal Resolution Differences</b></a> \\
+<a class=PaperTitle href="https://arxiv.org/abs/2205.13769"><b>Continuous Cross-resolution Remote Sensing Image Change Detection</b></a> \\
  *IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2023*  \\
 **<font color="#000000">Hao Chen</font>**, Haotian Zhang, Keyan Chen, Chenyao Zhou, Song Chen, Zhengxia Zou, Zhenwei Shi\\
 [<a href="https://arxiv.org/abs/2205.13769">Arxiv</a>] [<a href="https://github.com/justchenhao/SILI_CD">Code</a>] 
