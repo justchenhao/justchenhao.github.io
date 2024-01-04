@@ -1,4 +1,5 @@
 # 🏆 Honors and Awards
+- *2024.01* Excellent Doctoral Thesis of Beihang University (**<font color="#C00000">Top 1%</font>**)
 - *2023.06* "Outstanding Graduates" of Beijing,  Ministry of Education of Beijing (**<font color="#C00000">Top 1%</font>**)
 - *2022.07* 《Remote Sensing》2022 Best Paper Award (**<font color="#C00000">Top 0.1%</font>**)
 - *2021.10* National Scholarship, Ministry of Education of China (**<font color="#C00000">Top 1%</font>**)
