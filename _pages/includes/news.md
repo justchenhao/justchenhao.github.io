@@ -1,4 +1,5 @@
 # 🔥 News
+- *2024.01*: One paper is accepted by ***TGRS (IF=8.2)***!
 - *2023.12*: One paper is accepted by ***TGRS (IF=8.2)***!
 - *2023.10*: One paper is accepted by ***TGRS (IF=8.2)***!
 - *2023.07*: My [google scholar](https://scholar.google.com/citations?user=BEDNoZIAAAAJ) citations have exceeded 1000 🎉🎉!
