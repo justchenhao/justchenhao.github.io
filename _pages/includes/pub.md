@@ -1,6 +1,17 @@
 
 # 📝 Selected Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="images/Obs_DS_Station.png"><img src='images/Obs_DS_Station.png' alt="Obs_DS_Station" width="100%"></a></div></div>
+<div class='paper-box-text' markdown="1">
+
+<a class=PaperTitle href="https://arxiv.org/abs/2401.11960"><b>Observation-Guided Meteorological Field Downscaling at Station Scale: A Benchmark and a New Method</b></a> \\
+ *Arxiv, 2024*  \\
+Zili Liu, **<font color="#000000">Hao Chen*</font>**, Lei Bai, Wenyuan Li, Keyan Chen, Zhengyi Wang, Wanli Ouyang, Zhengxia Zou, Zhenwei Shi* \\
+[<a href="https://arxiv.org/abs/2401.11960">Arxiv</a>] 
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="images/Continous_CD.png"><img src='images/Continous_CD.png' alt="Continous_CD" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -64,6 +75,18 @@
  *IEEE International Geoscience and Remote Sensing Symposium (IGARSS), 2022* \\
 **<font color="#000000">Hao Chen</font>**, Yifan Zao, Liqin Liu, Song Chen, Zhenwei Shi\\
 [<a href="https://levir.buaa.edu.cn/publications/chenhao_wcd_IGARSS.pdf">PDF</a>] [<a href="https://arxiv.org/abs/2201.05778">Arxiv</a>]
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="images/RSPrompter.png"><img src='images/RSPrompter.png' alt="RSPrompter" width="100%"></a></div></div>
+<div class='paper-box-text' markdown="1">
+
+<a class=PaperTitle href="https://arxiv.org/abs/2306.16269"><b>RSPrompter: Learning to Prompt for Remote Sensing Instance Segmentation based on Visual Foundation Model</b></a> \\
+  *IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2024* \\
+Keyan Chen, Chenyang Liu, **<font color="#000000">Hao Chen</font>**, Haotian Zhang, Wenyuan Li, Zhengxia Zou, Zhenwei Shi
+\\
+[<a href="https://ieeexplore.ieee.org/abstract/document/10409216/">TGRS</a>] [<a href="https://arxiv.org/abs/2306.16269">Arxiv</a>] [<a href="https://github.com/KyanChen/RSPrompter">Code</a>] 
 
 </div>
 </div>
