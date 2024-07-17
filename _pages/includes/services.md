@@ -2,8 +2,9 @@
 
 Reviewer
 
-- AAAI2024
-
+- AAAI, WWW
+- IEEE TPAMI
+- IJCV
 - [ISPRS Journal of Photogrammetry and Remote Sensing](https://www.journals.elsevier.com/isprs-journal-of-photogrammetry-and-remote-sensing)
 - [IEEE Transactions on Geoscience and Remote Sensing](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36) (TGRS)
 - [IEEE Transactions on Neural Networks and Learning Systems](https://mc.manuscriptcentral.com/tnnls) (TNNLS)
