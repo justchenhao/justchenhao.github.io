@@ -58,6 +58,17 @@ Wanghan Xu, Kang Chen, Tao Han, **<font color="#000000">Hao Chen*</font>**, Wanl
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="images/fengwu4dvar.png"><img src='images/fengwu4dvar.png' alt="fengwu4dvar" width="100%"></a></div></div>
+<div class='paper-box-text' markdown="1">
+
+<a class=PaperTitle href="https://openreview.net/forum?id=Y2WorV5ag6"><b>Towards a Self-contained Data-driven Global Weather Forecasting Framework</b></a> \\
+ *Arxiv, 2023*  \\
+Yi Xiao, LEI BAI, Wei Xue, **<font color="#000000">Hao Chen*</font>**, Kun Chen, kang chen, Tao Han, Wanli Ouyang \\
+[<a href="https://openreview.net/forum?id=Y2WorV5ag6">ICML 2024</a>] [<a href="https://github.com/OpenEarthLab/FengWu-4DVar">Code</a>] 
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="images/fengwuadas.png"><img src='images/fengwuadas.png' alt="fengwuadas" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
