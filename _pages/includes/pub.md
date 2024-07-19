@@ -8,7 +8,7 @@
 
 <a class=PaperTitle href="https://arxiv.org/abs/2401.11960"><b>Observation-Guided Meteorological Field Downscaling at Station Scale: A Benchmark and a New Method</b></a> \\
  *Arxiv, 2024*  \\
-Zili Liu, **<font color="#000000">Hao Chen*</font>**, Lei Bai, Wenyuan Li, Keyan Chen, Zhengyi Wang, Wanli Ouyang, Zhengxia Zou, Zhenwei Shi* \\
+Zili Liu, **<font color="#000000">Hao Chen†</font>**, Lei Bai, Wenyuan Li, Keyan Chen, Zhengyi Wang, Wanli Ouyang, Zhengxia Zou, Zhenwei Shi† \\
 [<a href="https://arxiv.org/abs/2401.11960">Arxiv</a>] 
 
 </div>
@@ -19,7 +19,7 @@ Zili Liu, **<font color="#000000">Hao Chen*</font>**, Lei Bai, Wenyuan Li, Keyan
 
 <a class=PaperTitle href="https://arxiv.org/abs/2401.04125"><b>Deepphysinet: Bridging deep learning and atmospheric physics for accurate and continuous weather modeling</b></a> \\
  *Arxiv, 2024*  \\
-Wenyuan Li, Zili Liu, Keyan Chen, **<font color="#000000">Hao Chen*</font>**, Shunlin Liang, Zhengxia Zou, Zhenwei Shi \\
+Wenyuan Li, Zili Liu, Keyan Chen, **<font color="#000000">Hao Chen</font>**, Shunlin Liang, Zhengxia Zou, Zhenwei Shi \\
 [<a href="https://arxiv.org/abs/2401.04125">Arxiv</a>]
 
 </div>
@@ -30,7 +30,7 @@ Wenyuan Li, Zili Liu, Keyan Chen, **<font color="#000000">Hao Chen*</font>**, Sh
 
 <a class=PaperTitle href="https://arxiv.org/abs/2402.01295"><b>FNP: Fourier Neural Processes for Arbitrary-Resolution Data Assimilation</b></a> \\
  *Arxiv, 2024*  \\
-Kun Chen, Tao Chen, Peng Ye, **<font color="#000000">Hao Chen*</font>**, Kang Chen, Tao Han, Wanli Ouyang, Lei Bai \\
+Kun Chen, Tao Chen, Peng Ye, **<font color="#000000">Hao Chen</font>**, Kang Chen, Tao Han, Wanli Ouyang, Lei Bai \\
 [<a href="https://arxiv.org/abs/2406.01645">Arxiv</a>]
 
 </div>
@@ -41,7 +41,7 @@ Kun Chen, Tao Chen, Peng Ye, **<font color="#000000">Hao Chen*</font>**, Kang Ch
 
 <a class=PaperTitle href="https://arxiv.org/abs/2405.13796"><b>Generalizing Weather Forecast to Fine-grained Temporal Scales via Physics-AI Hybrid Modeling</b></a> \\
  *Arxiv, 2024*  \\
-Wanghan Xu, Fenghua Ling, Wenlong Zhang, Tao Han, **<font color="#000000">Hao Chen*</font>**, Wanli Ouyang, Lei Bai \\
+Wanghan Xu, Fenghua Ling, Wenlong Zhang, Tao Han, **<font color="#000000">Hao Chen</font>**, Wanli Ouyang, Lei Bai \\
 [<a href="https://arxiv.org/abs/2405.13796">Arxiv</a>] [<a href="https://github.com/black-yt/WeatherGFT">Code</a>] 
 
 </div>
@@ -52,7 +52,7 @@ Wanghan Xu, Fenghua Ling, Wenlong Zhang, Tao Han, **<font color="#000000">Hao Ch
 
 <a class=PaperTitle href="https://arxiv.org/abs/2402.01295"><b>ExtremeCast: Boosting Extreme Value Prediction for Global Weather Forecast</b></a> \\
  *Arxiv, 2024*  \\
-Wanghan Xu, Kang Chen, Tao Han, **<font color="#000000">Hao Chen*</font>**, Wanli Ouyang, Lei Bai \\
+Wanghan Xu, Kang Chen, Tao Han, **<font color="#000000">Hao Chen</font>**, Wanli Ouyang, Lei Bai \\
 [<a href="https://arxiv.org/abs/2402.01295">Arxiv</a>]
 
 </div>
@@ -63,7 +63,7 @@ Wanghan Xu, Kang Chen, Tao Han, **<font color="#000000">Hao Chen*</font>**, Wanl
 
 <a class=PaperTitle href="https://openreview.net/forum?id=Y2WorV5ag6"><b>Towards a Self-contained Data-driven Global Weather Forecasting Framework</b></a> \\
  *Arxiv, 2023*  \\
-Yi Xiao, LEI BAI, Wei Xue, **<font color="#000000">Hao Chen*</font>**, Kun Chen, kang chen, Tao Han, Wanli Ouyang \\
+Yi Xiao, LEI BAI, Wei Xue, **<font color="#000000">Hao Chen</font>**, Kun Chen, kang chen, Tao Han, Wanli Ouyang \\
 [<a href="https://openreview.net/forum?id=Y2WorV5ag6">ICML 2024</a>] [<a href="https://github.com/OpenEarthLab/FengWu-4DVar">Code</a>] 
 
 </div>
@@ -74,7 +74,7 @@ Yi Xiao, LEI BAI, Wei Xue, **<font color="#000000">Hao Chen*</font>**, Kun Chen,
 
 <a class=PaperTitle href="https://arxiv.org/abs/2312.12462"><b>Towards an end-to-end artificial intelligence driven global weather forecasting system</b></a> \\
  *Arxiv, 2023*  \\
-Kun Chen, Lei Bai, Fenghua Ling, Peng Ye, Tao Chen, Jing-Jia Luo, **<font color="#000000">Hao Chen*</font>**, Yi Xiao, Kang Chen, Tao Han, Wanli Ouyang \\
+Kun Chen, Lei Bai, Fenghua Ling, Peng Ye, Tao Chen, Jing-Jia Luo, **<font color="#000000">Hao Chen</font>**, Yi Xiao, Kang Chen, Tao Han, Wanli Ouyang \\
 [<a href="https://arxiv.org/abs/2312.12462">Arxiv</a>]
 
 </div>
@@ -87,7 +87,7 @@ Kun Chen, Lei Bai, Fenghua Ling, Peng Ye, Tao Chen, Jing-Jia Luo, **<font color=
 
 <a class=PaperTitle href="[https://arxiv.org/abs/2401.11960](https://arxiv.org/abs/2404.02668)"><b>RS-Mamba for Large Remote Sensing Image Dense Prediction</b></a> \\
  *IEEE TGRS, 2024*  \\
-Sijie Zhao, **<font color="#000000">Hao Chen*</font>**, Xueliang Zhang*, Pengfeng Xiao, Lei Bai, Wanli Ouyang \\
+Sijie Zhao, **<font color="#000000">Hao Chen†</font>**, Xueliang Zhang†, Pengfeng Xiao, Lei Bai, Wanli Ouyang \\
 [<a href="https://arxiv.org/abs/2404.02668">Arxiv</a>] [<a href="https://ieeexplore.ieee.org/document/10589665">TGRS</a>] [<a href="https://github.com/walking-shadow/Official_Remote_Sensing_Mamba">Code</a>] 
 
 </div>
