@@ -2,18 +2,22 @@
 
 Reviewer
 
-- AAAI, WWW
-- IEEE TPAMI
-- IJCV
-- [ISPRS Journal of Photogrammetry and Remote Sensing](https://www.journals.elsevier.com/isprs-journal-of-photogrammetry-and-remote-sensing)
-- [IEEE Transactions on Geoscience and Remote Sensing](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36) (TGRS)
-- [IEEE Transactions on Neural Networks and Learning Systems](https://mc.manuscriptcentral.com/tnnls) (TNNLS)
-- [Journal of Applied Earth Observation and Geoinformation](https://www.sciencedirect.com/journal/international-journal-of-applied-earth-observation-and-geoinformation)
-- [IEEE Geoscience and Remote Sensing Letters](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859) (GRSL)
-- [IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4609443) (JSTAR)
-- [International Journal of Digital Earth](https://www.tandfonline.com/action/journalInformation?show=journalMetrics&journalCode=tjde20)
-- [Ocean Engineering](https://www.sciencedirect.com/journal/ocean-engineering)
-- [Information Fusion](https://www.journals.elsevier.com/information-fusion)
-- [Applied Soft Computing](https://www.journals.elsevier.com/applied-soft-computing)
-- [Expert Systems With Applications](https://www.journals.elsevier.com/expert-systems-with-applications%5C)
-- [IEEE Access](https://ieeexplore.ieee.org/xpl/aboutJournal.jsp?punumber=6287639)
+- AAAI, WWW, NIPS, ICCV, CVPR
+- IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
+- International Journal of Computer Vision (IJCV)
+- IEEE Transactions on Image Processing (TIP)
+- IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)
+- ISPRS Journal of Photogrammetry and Remote Sensing (ISPRS)
+- IEEE Transactions on Geoscience and Remote Sensing (TGRS)
+- IEEE Transactions on Neural Networks and Learning Systems (TNNLS)
+- Journal of Applied Earth Observation and Geoinformation
+- IEEE Geoscience and Remote Sensing Letters (GRSL)
+- IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTAR)
+- IEEE International Journal of Digital Earth (IJDE)
+- Journal of Remote Sensing (JRS)
+- Remote Sensing (RS)
+- Ocean Engineering
+- Information Fusion
+- Applied Soft Computing
+- Expert Systems With Applications
+- IEEE Access
