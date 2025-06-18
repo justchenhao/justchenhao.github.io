@@ -6,7 +6,7 @@ main:
   - title: "News"
     url: "/#-news"
 
-  - title: "Selected Publications"
+  - title: "Publications"
     url: "/#-selected-publications"
 
   - title: "Honors and Awards"
@@ -15,8 +15,8 @@ main:
   - title: "Services"
     url: "/#-services"
 
-  - title: "Educations"
-    url: "/#-educations"
+  - title: "Others"
+    url: "/#-others"
 
 
 
