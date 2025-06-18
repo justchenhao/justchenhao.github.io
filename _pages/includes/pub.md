@@ -6,10 +6,21 @@
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="images/Obs_DS_Station.png"><img src='images/Obs_DS_Station.png' alt="Obs_DS_Station" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
-<a class=PaperTitle href="https://arxiv.org/abs/2401.11960"><b>Observation-Guided Meteorological Field Downscaling at Station Scale: A Benchmark and a New Method</b></a> \\
- *Arxiv, 2024*  \\
+<a class=PaperTitle href="https://ieeexplore.ieee.org/abstract/document/10643214"><b>Deriving Accurate Surface Meteorological States at Arbitrary Locations via Observation-Guided Continuous Neural Field Modeling</b></a> \\
+ *IEEE TGRS, 2024*  \\
 Zili Liu, **<font color="#000000">Hao Chen†</font>**, Lei Bai, Wenyuan Li, Keyan Chen, Zhengyi Wang, Wanli Ouyang, Zhengxia Zou, Zhenwei Shi† \\
-[<a href="https://arxiv.org/abs/2401.11960">Arxiv</a>] 
+[<a href="https://arxiv.org/abs/2401.11960">Arxiv</a>] [<a href="https://ieeexplore.ieee.org/abstract/document/10643214">TGRS</a>] 
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="images/MambaDS.png"><img src='images/MambaDS.png' alt="MambaDS" width="100%"></a></div></div>
+<div class='paper-box-text' markdown="1">
+
+<a class=PaperTitle href="https://ieeexplore.ieee.org/abstract/document/10752514"><b>MambaDS: Near-Surface Meteorological Field Downscaling With Topography Constrained Selective State-Space Modeling</b></a> \\
+ *TGRS, 2024*  \\
+Zili Liu, **<font color="#000000">Hao Chen†</font>**, Lei Bai, Wenyuan Li, Wanli Ouyang, Zhengxia Zou, Zhenwei Shi† \\
+[<a href="https://ieeexplore.ieee.org/abstract/document/10752514">TGRS</a>] 
 
 </div>
 </div>
@@ -29,7 +40,7 @@ Wenyuan Li, Zili Liu, Keyan Chen, **<font color="#000000">Hao Chen</font>**, Shu
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://arxiv.org/abs/2402.01295"><b>FNP: Fourier Neural Processes for Arbitrary-Resolution Data Assimilation</b></a> \\
- *Arxiv, 2024*  \\
+ *NIPS, 2024*  \\
 Kun Chen, Tao Chen, Peng Ye, **<font color="#000000">Hao Chen</font>**, Kang Chen, Tao Han, Wanli Ouyang, Lei Bai \\
 [<a href="https://arxiv.org/abs/2406.01645">Arxiv</a>]
 
@@ -40,7 +51,7 @@ Kun Chen, Tao Chen, Peng Ye, **<font color="#000000">Hao Chen</font>**, Kang Che
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://arxiv.org/abs/2405.13796"><b>Generalizing Weather Forecast to Fine-grained Temporal Scales via Physics-AI Hybrid Modeling</b></a> \\
- *Arxiv, 2024*  \\
+ *NIPS, 2024*  \\
 Wanghan Xu, Fenghua Ling, Wenlong Zhang, Tao Han, **<font color="#000000">Hao Chen</font>**, Wanli Ouyang, Lei Bai \\
 [<a href="https://arxiv.org/abs/2405.13796">Arxiv</a>] [<a href="https://github.com/black-yt/WeatherGFT">Code</a>] 
 
@@ -82,13 +93,24 @@ Kun Chen, Lei Bai, Fenghua Ling, Peng Ye, Tao Chen, Jing-Jia Luo, **<font color=
 
 ## Remote Sensing Image Interpretation
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="images/VegeDiff.png"><img src='images/VegeDiff.png' alt="VegeDiff" width="100%"></a></div></div>
+<div class='paper-box-text' markdown="1">
+
+<a class=PaperTitle href="https://ieeexplore.ieee.org/abstract/document/10978056"><b>VegeDiff: Latent Diffusion Model for Geospatial Vegetation Forecasting</b></a> \\
+ *IEEE TGRS, 2025*  \\
+Sijie Zhao, **<font color="#000000">Hao Chen†</font>**, Xueliang Zhang†, Pengfeng Xiao, Lei Bai \\
+[<a href="https://arxiv.org/abs/2404.02668">Arxiv</a>] [<a href="https://ieeexplore.ieee.org/abstract/document/10978056">TGRS</a>] [<a href="https://github.com/walking-shadow/Official_VegeDiff">Code</a>]
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="images/RS_mamba.png"><img src='images/RS_mamba.png' alt="RS_mamba" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
-<a class=PaperTitle href="[https://arxiv.org/abs/2401.11960](https://arxiv.org/abs/2404.02668)"><b>RS-Mamba for Large Remote Sensing Image Dense Prediction</b></a> \\
+<a class=PaperTitle href="https://arxiv.org/abs/2404.02668"><b>RS-Mamba for Large Remote Sensing Image Dense Prediction</b></a> \\
  *IEEE TGRS, 2024*  \\
 Sijie Zhao, **<font color="#000000">Hao Chen†</font>**, Xueliang Zhang†, Pengfeng Xiao, Lei Bai, Wanli Ouyang \\
-[<a href="https://arxiv.org/abs/2404.02668">Arxiv</a>] [<a href="https://ieeexplore.ieee.org/document/10589665">TGRS</a>] [<a href="https://github.com/walking-shadow/Official_Remote_Sensing_Mamba">Code</a>] 
+[<a href="https://arxiv.org/abs/2404.02668">Arxiv</a>] [<a href="https://ieeexplore.ieee.org/document/10589665">TGRS</a>] [<a href="https://github.com/walking-shadow/Official_Remote_Sensing_Mamba">Code</a>] (**<font color="#C00000">ESI Highly Cited Paper(Top-1%)</font>**)
 
 </div>
 </div>
