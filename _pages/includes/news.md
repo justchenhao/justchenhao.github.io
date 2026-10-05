@@ -1,4 +1,7 @@
 # 🔥 News
+- *2026.08*: Received the **IEEE GRSS Highest Impact Paper Award (Top 0.01%)** 🎉!
+- *2025.11*: Appointed as Academic Editor for the [*Remote Sensing* Special Issue "Advancing Remote Sensing Through Large Multimodal Foundation Models: Toward Intelligent Earth Observation"](https://www.mdpi.com/journal/remotesensing/special_issues/GJ86QFO3C4#editors) (2025.11 -- 2026.10).
+- *2025.11*: Selected for the 2025 China Society of Astronautics Outstanding Doctoral Dissertation Incentive Program (**Top 0.1%**).
 - *2025.03*: Awarded 2024 Beijing Outstanding Doctoral Dissertation Nomination. (北京优博提名)
 - *2025.01*: One paper becomes the most cited paper in the field in the past five years. (所在领域近5年最高引)
 - *2025.01*: Our RS-Mamba becomes an ESI Highly Cited Paper.
