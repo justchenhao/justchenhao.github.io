@@ -7,7 +7,7 @@
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://arxiv.org/abs/2503.06623"><b>Transforming Weather Data from Pixel to Latent Space</b></a> \\
- *ICML 2026 (Spotlight)*  \\
+ *ICML, 2026 (Spotlight)*  \\
 Sijie Zhao, Feng Liu, Xueliang Zhang, **<font color="#000000">Hao Chen</font>†**, Tao Han, Junchao Gong, Ran Tao, Pengfeng Xiao, Xinyu Gu, Lei Bai \\
 [<a href="https://arxiv.org/abs/2503.06623">Arxiv</a>] [<a href="https://openreview.net/forum?id=NlSWKeQPoZ">Paper</a>] [<a href="https://github.com/NJU-LHRS/Weather-Latent-Autoencoder">Code</a>]
 
@@ -37,7 +37,7 @@ Junchao Gong, Kaiyi Xu, Wangxu Wei, Siwei Tu, Jingyi Xu, Zili Liu, Hang Fan, Zhi
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://ieeexplore.ieee.org/document/11426994"><b>Latent Space Transformer for High-Resolution Particulate Matter Nowcasting From LiDAR Observations</b></a> \\
- *IEEE Transactions on Geoscience and Remote Sensing, 2026*  \\
+ *IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2026*  \\
 Ran Tao, Chong Wang, **<font color="#000000">Hao Chen</font>†**, Mingjiao Jia, Xiang Shang, Luoyuan Qu, Guoliang Shentu, Yudie Li, Lei Bai, Xianghui Xue, et al. \\
 [<a href="https://ieeexplore.ieee.org/iel8/36/11333908/11426994.pdf">PDF</a>] [<a href="https://ieeexplore.ieee.org/document/11426994">Paper</a>]
 
@@ -67,7 +67,7 @@ Xiangyu Zhao, Zhiwang Zhou, Wenlong Zhang, Yihao Liu, Xiangyu Chen, Junchao Gong
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://doi.org/10.1109/TGRS.2025.3586114"><b>KAN-enhanced transformer for wind profile retrieval from lidar spectra</b></a> \\
- *IEEE Transactions on Geoscience and Remote Sensing, 2025*  \\
+ *IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2025*  \\
 Ran Tao, Chong Wang, **<font color="#000000">Hao Chen</font>†**, Mingjiao Jia, Xiang Shang, Luoyuan Qu, Guoliang Shentu, Yanyu Lu, Yanfeng Huo, Lei Bai, et al. \\
 [<a href="https://doi.org/10.1109/TGRS.2025.3586114">Paper</a>]
 
@@ -87,7 +87,7 @@ Zili Liu, **<font color="#000000">Hao Chen</font>†**, Lei Bai, Wenyuan Li, Zhe
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://arxiv.org/abs/2501.14404"><b>Topographic informed Kolmogorov-Arnold neural interpolator for downscaling and correcting meteorological fields from in situ observations</b></a> \\
- *IEEE Transactions on Geoscience and Remote Sensing, 2025*  \\
+ *IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2025*  \\
 Zili Liu, **<font color="#000000">Hao Chen</font>†**, Lei Bai, Wenyuan Li, Zhengxia Zou, Zhenwei Shi \\
 [<a href="https://arxiv.org/abs/2501.14404">Arxiv</a>] [<a href="https://doi.org/10.1109/TGRS.2025.3578701">Paper</a>]
 
@@ -107,7 +107,7 @@ Siwei Tu, Ben Fei, Weidong Yang, Fenghua Ling, **<font color="#000000">Hao Chen<
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://arxiv.org/abs/2411.06714"><b>DiffSR: Learning radar reflectivity synthesis via diffusion model from satellite observations</b></a> \\
- *ICASSP 2025-2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025*  \\
+ *IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025*  \\
 Xuming He, Zhiwang Zhou, Wenlong Zhang, Xiangyu Zhao, **<font color="#000000">Hao Chen</font>**, Shiqi Chen, Lei Bai \\
 [<a href="https://arxiv.org/abs/2411.06714">Arxiv</a>] [<a href="https://doi.org/10.1109/ICASSP49660.2025.10888161">Paper</a>]
 
@@ -127,7 +127,7 @@ Wanghan Xu, Yuhao Zhou, Yifan Zhou, Qinglong Cao, Shuo Li, Jia Bu, Bo Liu, Yixin
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://ieeexplore.ieee.org/abstract/document/10643214"><b>Deriving Accurate Surface Meteorological States at Arbitrary Locations via Observation-Guided Continuous Neural Field Modeling</b></a> \\
- *IEEE TGRS, 2024*  \\
+ *IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2024*  \\
 Zili Liu, **<font color="#000000">Hao Chen†</font>**, Lei Bai, Wenyuan Li, Keyan Chen, Zhengyi Wang, Wanli Ouyang, Zhengxia Zou, Zhenwei Shi† \\
 [<a href="https://arxiv.org/abs/2401.11960">Arxiv</a>] [<a href="https://ieeexplore.ieee.org/abstract/document/10643214">TGRS</a>] 
 
@@ -138,7 +138,7 @@ Zili Liu, **<font color="#000000">Hao Chen†</font>**, Lei Bai, Wenyuan Li, Key
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://ieeexplore.ieee.org/abstract/document/10752514"><b>MambaDS: Near-Surface Meteorological Field Downscaling With Topography Constrained Selective State-Space Modeling</b></a> \\
- *TGRS, 2024*  \\
+ *IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2024*  \\
 Zili Liu, **<font color="#000000">Hao Chen†</font>**, Lei Bai, Wenyuan Li, Wanli Ouyang, Zhengxia Zou, Zhenwei Shi† \\
 [<a href="https://ieeexplore.ieee.org/abstract/document/10752514">TGRS</a>] 
 
@@ -149,7 +149,7 @@ Zili Liu, **<font color="#000000">Hao Chen†</font>**, Lei Bai, Wenyuan Li, Wan
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://arxiv.org/abs/2401.04125"><b>Deepphysinet: Bridging deep learning and atmospheric physics for accurate and continuous weather modeling</b></a> \\
- *Arxiv, 2024*  \\
+ *arXiv, 2024*  \\
 Wenyuan Li, Zili Liu, Keyan Chen, **<font color="#000000">Hao Chen</font>**, Shunlin Liang, Zhengxia Zou, Zhenwei Shi \\
 [<a href="https://arxiv.org/abs/2401.04125">Arxiv</a>]
 
@@ -160,7 +160,7 @@ Wenyuan Li, Zili Liu, Keyan Chen, **<font color="#000000">Hao Chen</font>**, Shu
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://arxiv.org/abs/2402.01295"><b>FNP: Fourier Neural Processes for Arbitrary-Resolution Data Assimilation</b></a> \\
- *NIPS, 2024*  \\
+ *NeurIPS, 2024*  \\
 Kun Chen, Tao Chen, Peng Ye, **<font color="#000000">Hao Chen</font>**, Kang Chen, Tao Han, Wanli Ouyang, Lei Bai \\
 [<a href="https://arxiv.org/abs/2406.01645">Arxiv</a>]
 
@@ -171,7 +171,7 @@ Kun Chen, Tao Chen, Peng Ye, **<font color="#000000">Hao Chen</font>**, Kang Che
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://arxiv.org/abs/2405.13796"><b>Generalizing Weather Forecast to Fine-grained Temporal Scales via Physics-AI Hybrid Modeling</b></a> \\
- *NIPS, 2024*  \\
+ *NeurIPS, 2024*  \\
 Wanghan Xu, Fenghua Ling, Wenlong Zhang, Tao Han, **<font color="#000000">Hao Chen</font>**, Wanli Ouyang, Lei Bai \\
 [<a href="https://arxiv.org/abs/2405.13796">Arxiv</a>] [<a href="https://github.com/black-yt/WeatherGFT">Code</a>] 
 
@@ -182,7 +182,7 @@ Wanghan Xu, Fenghua Ling, Wenlong Zhang, Tao Han, **<font color="#000000">Hao Ch
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://arxiv.org/abs/2402.01295"><b>ExtremeCast: Boosting Extreme Value Prediction for Global Weather Forecast</b></a> \\
- *Arxiv, 2024*  \\
+ *arXiv, 2024*  \\
 Wanghan Xu, Kang Chen, Tao Han, **<font color="#000000">Hao Chen</font>**, Wanli Ouyang, Lei Bai \\
 [<a href="https://arxiv.org/abs/2402.01295">Arxiv</a>]
 
@@ -193,7 +193,7 @@ Wanghan Xu, Kang Chen, Tao Han, **<font color="#000000">Hao Chen</font>**, Wanli
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://openreview.net/forum?id=Y2WorV5ag6"><b>Towards a Self-contained Data-driven Global Weather Forecasting Framework</b></a> \\
- *Arxiv, 2023*  \\
+ *arXiv, 2023*  \\
 Yi Xiao, LEI BAI, Wei Xue, **<font color="#000000">Hao Chen</font>**, Kun Chen, kang chen, Tao Han, Wanli Ouyang \\
 [<a href="https://openreview.net/forum?id=Y2WorV5ag6">ICML 2024</a>] [<a href="https://github.com/OpenEarthLab/FengWu-4DVar">Code</a>] 
 
@@ -204,7 +204,7 @@ Yi Xiao, LEI BAI, Wei Xue, **<font color="#000000">Hao Chen</font>**, Kun Chen, 
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://arxiv.org/abs/2312.12462"><b>Towards an end-to-end artificial intelligence driven global weather forecasting system</b></a> \\
- *Arxiv, 2023*  \\
+ *arXiv, 2023*  \\
 Kun Chen, Lei Bai, Fenghua Ling, Peng Ye, Tao Chen, Jing-Jia Luo, **<font color="#000000">Hao Chen</font>**, Yi Xiao, Kang Chen, Tao Han, Wanli Ouyang \\
 [<a href="https://arxiv.org/abs/2312.12462">Arxiv</a>]
 
@@ -227,7 +227,7 @@ Sijie Zhao, Feng Liu, Xueliang Zhang, **<font color="#000000">Hao Chen</font>†
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://arxiv.org/abs/2505.12280"><b>Spatial–Temporal–Spectral Unified Modeling for Remote Sensing Dense Prediction</b></a> \\
- *IEEE Transactions on Geoscience and Remote Sensing, 2026*  \\
+ *IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2026*  \\
 Sijie Zhao, Feng Liu, Xueliang Zhang, **<font color="#000000">Hao Chen</font>†**, Pengfeng Xiao, Junjue Wang, Weihao Xuan, Naoto Yokoya, Lei Bai \\
 [<a href="https://arxiv.org/abs/2505.12280">Arxiv</a>] [<a href="https://doi.org/10.1109/TGRS.2026.3735430">Paper</a>] [<a href="https://github.com/NJU-LHRS/Official_TSSUN">Code</a>]
 
@@ -238,7 +238,7 @@ Sijie Zhao, Feng Liu, Xueliang Zhang, **<font color="#000000">Hao Chen</font>†
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://doi.org/10.1016/j.isprsjprs.2026.08.002"><b>GF7S: A large-scale GaoFen-7 stereo dataset and self-supervised adaptation of FoundationStereo for high-resolution DSM generation</b></a> \\
- *ISPRS Journal of Photogrammetry and Remote Sensing, 2026*  \\
+ *ISPRS Journal of Photogrammetry and Remote Sensing (ISPRS JPRS), 2026*  \\
 Yinxia Cao, Fenzhen Su, Dongjie Fu, Wenzhou Wu, Fengqin Yan, Rong Fan, **<font color="#000000">Hao Chen</font>**, Xin Huang \\
 [<a href="https://doi.org/10.1016/j.isprsjprs.2026.08.002">Paper</a>]
 
@@ -260,7 +260,7 @@ Haotian Zhang, **<font color="#000000">Hao Chen</font>**, Han Guo, Zhengxia Zou,
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://arxiv.org/abs/2509.15788"><b>FoBa: A foreground--background co-guided method and new benchmark for remote sensing semantic change detection</b></a> \\
- *IEEE Transactions on Geoscience and Remote Sensing, 2025*  \\
+ *IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2025*  \\
 Haotian Zhang, Han Guo, Keyan Chen, **<font color="#000000">Hao Chen</font>**, Zhengxia Zou, Zhenwei Shi \\
 [<a href="https://arxiv.org/abs/2509.15788">Arxiv</a>] [<a href="https://doi.org/10.1109/TGRS.2025.3636947">Paper</a>] [<a href="https://github.com/zmoka-zht/FoBa">Code</a>] [<a href="https://levir.buaa.edu.cn/datasets/">Dataset</a>] (**<font color="#C00000">ESI Highly Cited Paper</font>**)
 
@@ -271,7 +271,7 @@ Haotian Zhang, Han Guo, Keyan Chen, **<font color="#000000">Hao Chen</font>**, Z
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://arxiv.org/abs/2407.15317"><b>Open-CD: A comprehensive toolbox for change detection</b></a> \\
- *Proceedings of the 33rd ACM International Conference on Multimedia, 2025*  \\
+ *ACM International Conference on Multimedia (ACM MM), 2025*  \\
 Kaiyu Li<sup>†</sup>, Jiawei Jiang<sup>†</sup>, Andrea Codegoni<sup>†</sup>, Chengxi Han<sup>†</sup>, Yupeng Deng<sup>†</sup>, Keyan Chen<sup>†</sup>, Zhuo Zheng<sup>†</sup>, **<font color="#000000">Hao Chen</font>**<sup>†</sup>, Ziyuan Liu<sup>†</sup>, Yuantao Gu, Zhengxia Zou, et al. \\
 [<a href="https://arxiv.org/abs/2407.15317">Arxiv</a>] [<a href="https://doi.org/10.1145/3746027.3756881">Paper</a>] [<a href="https://github.com/likyoo/open-cd">Code</a>]
 
@@ -282,7 +282,7 @@ Kaiyu Li<sup>†</sup>, Jiawei Jiang<sup>†</sup>, Andrea Codegoni<sup>†</sup
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://doi.org/10.1109/TGRS.2024.3376673"><b>BiFA: Remote sensing image change detection with bitemporal feature alignment</b></a> \\
- *IEEE Transactions on Geoscience and Remote Sensing, 2024*  \\
+ *IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2024*  \\
 Haotian Zhang, **<font color="#000000">Hao Chen</font>**, Chenyao Zhou, Keyan Chen, Chenyang Liu, Zhengxia Zou, Zhenwei Shi \\
 [<a href="https://doi.org/10.1109/TGRS.2024.3376673">Paper</a>] [<a href="https://github.com/zmoka-zht/BiFA">Code</a>] (**<font color="#C00000">ESI Highly Cited Paper</font>**)
 
@@ -293,7 +293,7 @@ Haotian Zhang, **<font color="#000000">Hao Chen</font>**, Chenyao Zhou, Keyan Ch
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://doi.org/10.1109/TGRS.2023.3335975"><b>Diverse hyperspectral remote sensing image synthesis with diffusion models</b></a> \\
- *IEEE Transactions on Geoscience and Remote Sensing, 2023*  \\
+ *IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2023*  \\
 Liqin Liu, Bowen Chen, **<font color="#000000">Hao Chen</font>**, Zhengxia Zou, Zhenwei Shi \\
 [<a href="https://levir.buaa.edu.cn/static/pdfs/2023_liqin_liu_hyperdiffusion.pdf">PDF</a>] [<a href="https://doi.org/10.1109/TGRS.2023.3335975">Paper</a>] (**<font color="#C00000">ESI Highly Cited Paper</font>**)
 
@@ -304,7 +304,7 @@ Liqin Liu, Bowen Chen, **<font color="#000000">Hao Chen</font>**, Zhengxia Zou, 
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://ieeexplore.ieee.org/abstract/document/10978056"><b>VegeDiff: Latent Diffusion Model for Geospatial Vegetation Forecasting</b></a> \\
- *IEEE TGRS, 2025*  \\
+ *IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2025*  \\
 Sijie Zhao, **<font color="#000000">Hao Chen†</font>**, Xueliang Zhang†, Pengfeng Xiao, Lei Bai \\
 [<a href="https://arxiv.org/abs/2404.02668">Arxiv</a>] [<a href="https://ieeexplore.ieee.org/abstract/document/10978056">TGRS</a>] [<a href="https://github.com/walking-shadow/Official_VegeDiff">Code</a>]
 
@@ -315,7 +315,7 @@ Sijie Zhao, **<font color="#000000">Hao Chen†</font>**, Xueliang Zhang†, Pen
 <div class='paper-box-text' markdown="1">
 
 <a class=PaperTitle href="https://arxiv.org/abs/2404.02668"><b>RS-Mamba for Large Remote Sensing Image Dense Prediction</b></a> \\
- *IEEE TGRS, 2024*  \\
+ *IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2024*  \\
 Sijie Zhao, **<font color="#000000">Hao Chen†</font>**, Xueliang Zhang†, Pengfeng Xiao, Lei Bai, Wanli Ouyang \\
 [<a href="https://arxiv.org/abs/2404.02668">Arxiv</a>] [<a href="https://ieeexplore.ieee.org/document/10589665">TGRS</a>] [<a href="https://github.com/walking-shadow/Official_Remote_Sensing_Mamba">Code</a>] (**<font color="#C00000">ESI Highly Cited Paper(Top-1%)</font>**)
 
